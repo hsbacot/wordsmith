@@ -1,8 +1,24 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashSet;
+
 /**
  * Created by hsbacot on 2/12/14.
  */
 public class Board {
+    private HashSet dictionary = new HashSet();
     Space[][] spaces = new Space[15][15];
+
+    // initialize hashset to hold words from words file
+//    HashSet dictionary = new HashSet();
+    public Board() {
+        populateDictionary();
+        setSpaces();
+    }
+
+
 
     public void setSpaces() {
         for(int row = 0; row < 15; row++) {
@@ -46,7 +62,7 @@ public class Board {
     public void placeWord(String word, int row, int col, String direction) {
         if (direction == "down") {
             //This checks that downward words aren't off the board
-            if (word.length() + row < 15) {
+            if (word.length() + row < 15 && checkWord(word)) {
                 //paint
                 char[] letterArr = word.toCharArray();
                 for(int i = 0; i < word.length(); i++){
@@ -67,5 +83,29 @@ public class Board {
             }
         }
 
+    }
+
+    public boolean checkWord(String word){
+        if(this.dictionary.contains(word)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // Add words to dictionary hashset
+    public void populateDictionary() {
+        // Load words file by line
+        try {
+            BufferedReader in = new BufferedReader(new FileReader("words"));
+            String line = null;
+            while((line = in.readLine()) != null) {
+                this.dictionary.add(in.readLine());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
