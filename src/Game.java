@@ -24,11 +24,7 @@ public class Game {
         row = scanner.nextInt();
 
         System.out.println("In what direction would you like to play? (down/right)");
-        direction = "right";
-        // Used contains because of error with setting string to scanner input
-        if (scanner.next().contains("down")) {
-            direction = "down";
-        }
+        direction = scanner.next();
 
 //        testBoard.placeWord("he", 5,5, direction);
         testBoard.placeWord(word, row, col, direction);

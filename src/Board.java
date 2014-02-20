@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -9,6 +12,9 @@ import java.util.HashSet;
  */
 public class Board {
     private HashSet dictionary = new HashSet();
+    private ArrayList<Charset> letterBag = new ArrayList();
+    private HashMap<Character, Integer> scoreGuide = new HashMap<Character, Integer>();
+
     Space[][] spaces = new Space[15][15];
 
     // initialize hashset to hold words from words file
@@ -16,6 +22,8 @@ public class Board {
     public Board() {
         populateDictionary();
         setSpaces();
+        setLetterBag();
+        setScoreGuide();
     }
 
 
@@ -28,6 +36,38 @@ public class Board {
         }
     }
 
+    public void setScoreGuide() {
+        this.scoreGuide.put('a', 1);
+        this.scoreGuide.put('b', 3);
+        this.scoreGuide.put('c', 3);
+        this.scoreGuide.put('d', 2);
+        this.scoreGuide.put('e', 1);
+        this.scoreGuide.put('f', 4);
+        this.scoreGuide.put('g', 2);
+        this.scoreGuide.put('h', 4);
+        this.scoreGuide.put('i', 1);
+        this.scoreGuide.put('j', 8);
+        this.scoreGuide.put('k', 5);
+        this.scoreGuide.put('l', 1);
+        this.scoreGuide.put('m', 3);
+        this.scoreGuide.put('n', 1);
+        this.scoreGuide.put('o', 1);
+        this.scoreGuide.put('p', 3);
+        this.scoreGuide.put('q', 10);
+        this.scoreGuide.put('r', 1);
+        this.scoreGuide.put('s', 1);
+        this.scoreGuide.put('t', 1);
+        this.scoreGuide.put('u', 1);
+        this.scoreGuide.put('v', 4);
+        this.scoreGuide.put('w', 4);
+        this.scoreGuide.put('x', 8);
+        this.scoreGuide.put('y', 4);
+        this.scoreGuide.put('z', 10);
+    }
+
+    public void setLetterBag() {
+        
+    }
 
     public boolean isOccupied(int row, int column){
        if(spaces[row][column].getLetter() == '\u0000') {
@@ -60,7 +100,7 @@ public class Board {
     }
 
     public void placeWord(String word, int row, int col, String direction) {
-        if (direction == "down") {
+        if (direction.equals("down")) {
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
             if (word.length() + row < 15 && checkWord(word) && word.length() > 1) {
