@@ -62,7 +62,8 @@ public class Board {
     public void placeWord(String word, int row, int col, String direction) {
         if (direction == "down") {
             //This checks that downward words aren't off the board
-            if (word.length() + row < 15 && checkWord(word)) {
+            // Checks that all words are greater than 1 character in length
+            if (word.length() + row < 15 && checkWord(word) && word.length() > 1) {
                 //paint
                 char[] letterArr = word.toCharArray();
                 for(int i = 0; i < word.length(); i++){
@@ -75,8 +76,14 @@ public class Board {
         }
         else {
             //rightward word check
-            if (word.length() + col < 15) {
+            //This checks that downward words aren't off the board
+            // Checks that all words are greater than 1 character in length
+            if (word.length() + row < 15 && checkWord(word) && word.length() > 1) {
                 //paint
+                char[] letterArr = word.toCharArray();
+                for(int i = 0; i < word.length(); i++){
+                    placeLetter(letterArr[i], row, col + i);
+                }
             }
             else {
                 //error. redo move?
