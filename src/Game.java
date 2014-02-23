@@ -28,6 +28,11 @@ public class Game {
 
 //        testBoard.placeWord("he", 5,5, direction);
         testBoard.placeWord(word, row, col, direction);
+        // make sure all board is valid, if not throw error
+
+        // detect if more words are created on play
+
+        // score words
         testBoard.render();
     }
 
