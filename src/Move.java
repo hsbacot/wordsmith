@@ -11,8 +11,8 @@ import java.util.HashSet;
  */
 public class Move {
     private HashSet<String> dictionary = new HashSet();
-    public ArrayList<String> words;
-    public ArrayList<String> oldWords;
+    public ArrayList<String> words = new ArrayList<String>();
+    public ArrayList<String> oldWords = new ArrayList<String>();
     public ArrayList<String> wordsPerTurn;
     private String word;
     private int row;
@@ -30,6 +30,7 @@ public class Move {
         this.spaces = board.spaces;
         this.board = board;
 
+        setScoreGuide();
         populateDictionary();
     }
 
@@ -55,6 +56,81 @@ public class Move {
 
     public void placeLetter(char letter, int rowPlace, int colPlace) {
         this.spaces[rowPlace][colPlace].setLetter(letter);
+    }
+
+    public boolean legalMove() {
+        boolean noO = noOverlap(); //checks if all tiles spaces targeted are free
+        boolean hasN = oneNeighbor(); //checks to make sure there is at least one neighbor
+        boolean noG = noGarbageWords(); //checks to make sure no garbage byproducts are created
+        return noO && hasN && noG;
+    }
+
+
+    public boolean noOverlap() {
+        if (this.direction.equals("down")) {
+
+            for(int i = 0; i < this.word.length(); i++){
+                if (this.board.spaces[this.row + i][this.col].getLetter() != '\u0000') {
+                    System.out.print("no overlap error");
+                    return false;
+                }
+            }
+        }
+        else {
+            for(int i = 0; i < this.word.length(); i++){
+                if (this.board.spaces[this.row][this.col + i].getLetter() != '\u0000') {
+                    System.out.print("no overlap error");
+                    return false;
+                }
+            }
+        }
+        return true;
+
+    }
+
+    public boolean oneNeighbor() {
+        boolean oneNeighbor = false;
+        if (this.direction.equals("down")) {
+
+            for(int i = 0; i < this.word.length(); i++){
+                if (hasNeighbor(this.row+i, this.col)) {
+                    oneNeighbor = true;
+                }
+            }
+        }
+        else {
+
+            for(int i = 0; i < this.word.length(); i++){
+                if (hasNeighbor(this.row, this.col+i)) {
+                    oneNeighbor = true;
+                }
+            }
+        }
+        if (oneNeighbor == false) {
+            System.out.print("one neighbor false");
+        }
+        return oneNeighbor;
+    }
+
+    public boolean noGarbageWords() {
+        //if has neighbor
+        //create string in that direction until blank, HARD
+        //check if string is word
+        return true;
+    }
+
+    public boolean hasNeighbor(int row, int col) {
+        int[][] neighbors = neighborPositions();
+        for(int i = 0; i < 4; i++) {
+            if (this.board.spaces[neighbors[i][0]][neighborPositions()[i][1]].getLetter() != '\u0000') {
+                return true;
+            } else if (row == 7 && col == 7) {
+                // first move must be in the center
+                return true;
+            }
+        }
+        System.out.print("has neighbor error");
+        return false;
     }
 
     public int placeWord() {
