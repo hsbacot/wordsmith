@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -12,6 +13,7 @@ import java.util.HashSet;
  */
 public class Board {
     private HashSet dictionary = new HashSet();
+    private ArrayList<Character> letterBag = new ArrayList<Character>();
 //    private ArrayList<Charset> letterBag = new ArrayList();
 
     Space[][] spaces = new Space[15][15];
@@ -25,6 +27,7 @@ public class Board {
         setWordMultipliers();
         setLetterBag();
 //        setScoreGuide();
+        Collections.shuffle(this.letterBag);
     }
 
 
@@ -85,9 +88,39 @@ public class Board {
     }
 
     public void setLetterBag() {
-
+        setMultipleLetters('E', 12);
+        setMultipleLetters('A', 9);
+        setMultipleLetters('I', 9);
+        setMultipleLetters('O', 8);
+        setMultipleLetters('N', 6);
+        setMultipleLetters('R', 6);
+        setMultipleLetters('T', 6);
+        setMultipleLetters('L', 4);
+        setMultipleLetters('S', 4);
+        setMultipleLetters('U', 4);
+        setMultipleLetters('D', 4);
+        setMultipleLetters('G', 3);
+        setMultipleLetters('B', 2);
+        setMultipleLetters('C', 2);
+        setMultipleLetters('M', 2);
+        setMultipleLetters('P', 2);
+        setMultipleLetters('F', 2);
+        setMultipleLetters('H', 2);
+        setMultipleLetters('V', 2);
+        setMultipleLetters('W', 2);
+        setMultipleLetters('Y', 2);
+        setMultipleLetters('K', 1);
+        setMultipleLetters('J', 1);
+        setMultipleLetters('X', 1);
+        setMultipleLetters('Q', 1);
+        setMultipleLetters('Z', 1);
     }
 
+    public void setMultipleLetters(Character letter, int times) {
+        for (int i = 0; i < times; i++){
+            this.letterBag.add(letter);
+        }
+    }
     public boolean isOccupied(int row, int column){
        if(spaces[row][column].getLetter() == '\u0000') {
            return false;
