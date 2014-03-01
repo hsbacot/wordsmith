@@ -3,10 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.IntBuffer;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Created by hsbacot on 2/24/14.
@@ -23,6 +20,8 @@ public class Move {
     private Space[][] spaces;
     private HashMap<Character, Integer> scoreGuide = new HashMap<Character, Integer>();
     private Board board;
+    //added spacesPlayed to keep track of spaces whose bonuses should be set to 1 by removeBonuses
+    private ArrayList<Space> spacesPlayed = new ArrayList<Space>();
 
     public Move(String word, int row, int col, String direction, Board board){
         this.word = word;
@@ -34,6 +33,53 @@ public class Move {
 
         setScoreGuide();
         populateDictionary();
+    }
+
+    public boolean moveMatchesHand() {
+        char[] letterArr = this.word.toCharArray();
+        ArrayList<Character> wordAR = new ArrayList<Character>();
+        HashMap<Character, Integer> playLetterCount = new HashMap<Character, Integer>();
+
+        for (int i = 0; i < word.length(); i++) {
+            wordAR.add(word.charAt(i));
+        }
+
+        ArrayList<Character> charPlayed = new ArrayList<Character>();
+
+        for  (int i = 0; i < word.length(); i++) {
+            char letter = wordAR.get(i);
+            if (amountInArrayList(letter, wordAR) > amountInArrayList(letter, this.board.currentPlayer.getHand())) {
+                System.out.println("ERROR: FALSE ON MATCH");
+                return false;
+            }
+            else {
+                charPlayed.add(wordAR.get(i));
+            }
+        }
+
+        for (int i = 0; i < charPlayed.size(); i++) {
+            if ( wordAR.contains(charPlayed.get(i))) {
+                int ind = wordAR.indexOf(charPlayed.get(i));
+                wordAR.remove(ind);
+            }
+        }
+
+        this.board.currentPlayer.setHand(wordAR);
+
+     return true;
+    }
+
+    public int amountInArrayList(char letter, ArrayList<Character> list) {
+        int counter = 0;
+
+        for (int i = 0; i < list.size(); i++){
+            Character listletter = list.get(i);
+            if (Character.getNumericValue(listletter) == Character.getNumericValue(letter)) {
+                counter++;
+            }
+        }
+
+        return counter;
     }
 
     public int[][] neighborPositions() {
@@ -174,6 +220,7 @@ public class Move {
     public int placeWord() {
         // score returned to account for multipliers
         int wordVal = 0;
+        int wordMultiplier = 1;
 
         if (this.direction.equals("down")) {
             //This checks that downward words aren't off the board
@@ -184,6 +231,9 @@ public class Move {
                 for(int i = 0; i < this.word.length(); i++){
                     placeLetter(letterArr[i], this.row + i, this.col);
                     wordVal += this.scoreGuide.get(letterArr[i]) * this.spaces[this.row + i][this.col].getLetterMultiplier();
+                    wordMultiplier *= this.spaces[this.row + i][this.col].getWordMultiplier();
+
+                    spacesPlayed.add(this.board.spaces[row+i][col]);
                 }
             }
             else {
@@ -199,7 +249,10 @@ public class Move {
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
                     placeLetter(letterArr[i], this.row, this.col + i);
-                    wordVal += this.scoreGuide.get(letterArr[i]);
+                    wordVal += this.scoreGuide.get(letterArr[i]) * this.spaces[this.row][this.col + i].getLetterMultiplier();
+                    wordMultiplier *= this.spaces[this.row + i][this.col].getWordMultiplier();
+
+                    spacesPlayed.add(this.board.spaces[row][col+i]);
                 }
             }
             else {
@@ -207,8 +260,36 @@ public class Move {
             }
         }
 
+        wordVal *= wordMultiplier;
+
         // do word multiplier if exists
         return wordVal;
+    }
+
+    //TODO add scoring for byproduct words
+    //TODO remove multipliers on letters just played
+//    psuedo
+//    in place word and byproducts, add spaces played to an arraylist
+ //   call with for loop set all multipliers on played spaces to 1
+
+    public int scoreWord(ArrayList<Space> word) {
+        int score = 0;
+        int wordMultiplier = 1;
+        for(int i = 0; i < word.size(); i++) {
+            score += this.scoreGuide.get(word.get(i).getLetter()) * word.get(i).getLetterMultiplier();
+            wordMultiplier *= this.spaces[this.row + i][this.col].getWordMultiplier();
+
+            spacesPlayed.add(this.board.spaces[row][col+i]);
+        }
+
+        return score * wordMultiplier;
+    }
+
+    public void removeBonuses() {
+        for(int i = 0; i < spacesPlayed.size(); i++) {
+            spacesPlayed.get(i).setLetterMultiplier(1);
+            spacesPlayed.get(i).setWordMultiplier(1);
+        }
     }
 
     public boolean checkWord(String word){

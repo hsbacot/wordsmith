@@ -11,7 +11,8 @@ import java.util.*;
 public class Board {
     private HashSet dictionary = new HashSet();
     private ArrayList<Character> letterBag = new ArrayList<Character>();
-    ArrayList<Player> playerList = new ArrayList<Player>();
+    public ArrayList<Player> playerList = new ArrayList<Player>();
+    public Player currentPlayer = new Player();
 
     Space[][] spaces = new Space[15][15];
 
@@ -27,7 +28,30 @@ public class Board {
         Collections.shuffle(this.letterBag);
     }
 
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
 
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+
+    public void nextPlayer() {
+        int ind = playerList.indexOf(currentPlayer);
+        if (ind + 1 < playerList.size()) {
+            ind = ind +1;
+        }
+        else {
+            ind = 0;
+        }
+        this.setCurrentPlayer(playerList.get(ind));
+    }
+
+    public void showScore() {
+        for(int i = 0; i < playerList.size(); i++) {
+            System.out.println(playerList.get(i).getName() + " " + playerList.get(i).getScore());
+        }
+    }
 
     public void setSpaces() {
         for(int row = 0; row < 15; row++) {
@@ -41,11 +65,12 @@ public class Board {
         String playerName;
         Scanner scanner = new Scanner(System.in);
         for(int i = 0; i < players; i++){
-            System.out.println("What is player " + i + "'s name?");
+            System.out.println("What is player " + (i+1) + "'s name?");
             playerName = scanner.next();
             Player player = new Player(playerName);
             playerList.add(player);
         }
+        this.setCurrentPlayer(playerList.get(0));
     }
 
     public void setAllLetterMultipliers(int row, int col, int multiplier) {
@@ -96,32 +121,32 @@ public class Board {
     }
 
     public void setLetterBag() {
-        setMultipleLetters('E', 12);
-        setMultipleLetters('A', 9);
-        setMultipleLetters('I', 9);
-        setMultipleLetters('O', 8);
-        setMultipleLetters('N', 6);
-        setMultipleLetters('R', 6);
-        setMultipleLetters('T', 6);
-        setMultipleLetters('L', 4);
-        setMultipleLetters('S', 4);
-        setMultipleLetters('U', 4);
-        setMultipleLetters('D', 4);
-        setMultipleLetters('G', 3);
-        setMultipleLetters('B', 2);
-        setMultipleLetters('C', 2);
-        setMultipleLetters('M', 2);
-        setMultipleLetters('P', 2);
-        setMultipleLetters('F', 2);
-        setMultipleLetters('H', 2);
-        setMultipleLetters('V', 2);
-        setMultipleLetters('W', 2);
-        setMultipleLetters('Y', 2);
-        setMultipleLetters('K', 1);
-        setMultipleLetters('J', 1);
-        setMultipleLetters('X', 1);
-        setMultipleLetters('Q', 1);
-        setMultipleLetters('Z', 1);
+        setMultipleLetters('e', 12);
+        setMultipleLetters('a', 9);
+        setMultipleLetters('i', 9);
+        setMultipleLetters('o', 8);
+        setMultipleLetters('n', 6);
+        setMultipleLetters('r', 6);
+        setMultipleLetters('t', 6);
+        setMultipleLetters('l', 4);
+        setMultipleLetters('s', 4);
+        setMultipleLetters('u', 4);
+        setMultipleLetters('d', 4);
+        setMultipleLetters('g', 3);
+        setMultipleLetters('b', 2);
+        setMultipleLetters('c', 2);
+        setMultipleLetters('m', 2);
+        setMultipleLetters('p', 2);
+        setMultipleLetters('f', 2);
+        setMultipleLetters('h', 2);
+        setMultipleLetters('v', 2);
+        setMultipleLetters('w', 2);
+        setMultipleLetters('y', 2);
+        setMultipleLetters('k', 1);
+        setMultipleLetters('j', 1);
+        setMultipleLetters('x', 1);
+        setMultipleLetters('q', 1);
+        setMultipleLetters('z', 1);
     }
 
     public void setMultipleLetters(Character letter, int times) {

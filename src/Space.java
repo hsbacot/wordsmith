@@ -4,8 +4,8 @@
 public class Space {
     // Defaults
     public char letter;
-    public int letterMultiplier;
-    public int wordMultiplier;
+    public int letterMultiplier = 1;
+    public int wordMultiplier = 1;
 
     public int getWordMultiplier() {
         return wordMultiplier;
@@ -37,7 +37,7 @@ public class Space {
     public String getSpaceValue() {
         if (this.letter != '\u0000') {
             String returnLetter = Character.toString(this.letter);
-            return returnLetter;
+            return returnLetter + " ";
         }
         else {
             if (this.letterMultiplier == 2) {
@@ -51,7 +51,7 @@ public class Space {
                 return "3W";
             }
             else {
-                return "__";
+                return "_ ";
             }
         }
     }
