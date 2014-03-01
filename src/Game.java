@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -7,12 +8,19 @@ import java.util.Scanner;
  */
 public class Game {
 
+
     public static void main(String[] args) {
         Board testBoard = new Board();
         String word, direction;
-        int col, row;
+        int col, row, numOfPlayers;
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
+        System.out.println("How many players?");
+        numOfPlayers = scanner.nextInt();
+        testBoard.createPlayers(numOfPlayers);
+        for (int i = 0; i < numOfPlayers; i++) {
+            testBoard.giveTiles(testBoard.playerList.get(i));
+        }
 
         while (counter < 10) {
             System.out.println("What word would you like to play?");
