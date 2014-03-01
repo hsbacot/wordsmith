@@ -65,7 +65,7 @@ public class Board {
         String playerName;
         Scanner scanner = new Scanner(System.in);
         for(int i = 0; i < players; i++){
-            System.out.println("What is player " + i + "'s name?");
+            System.out.println("What is player " + (i+1) + "'s name?");
             playerName = scanner.next();
             Player player = new Player(playerName);
             playerList.add(player);

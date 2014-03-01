@@ -37,7 +37,7 @@ public class Space {
     public String getSpaceValue() {
         if (this.letter != '\u0000') {
             String returnLetter = Character.toString(this.letter);
-            return returnLetter;
+            return returnLetter + " ";
         }
         else {
             if (this.letterMultiplier == 2) {
@@ -51,7 +51,7 @@ public class Space {
                 return "3W";
             }
             else {
-                return "__";
+                return "_ ";
             }
         }
     }

@@ -25,10 +25,13 @@ public class Game {
             testBoard.giveTiles(testBoard.playerList.get(i));
         }
 
+        Move fakeMove = new Move("", 16, 16, "", testBoard);
+        fakeMove.render();
+
 
         while (counter < 10) {
 
-            System.out.println(testBoard.currentPlayer.getName());
+            System.out.println("\n" + testBoard.currentPlayer.getName());
 
             System.out.println("What word would you like to play?");
             word = scanner.next();
@@ -45,6 +48,7 @@ public class Game {
     //        testBoard.placeWord("he", 5,5, direction);
     //        testBoard.placeWord(word, row, col, direction);
             Move newMove = new Move(word, row, col, direction, testBoard);
+
             // make sure all board is valid, if not throw error
             newMove.detectWords();
             newMove.oldWords = newMove.words;
