@@ -37,7 +37,8 @@ public class Game {
             System.out.println(testBoard.currentPlayer.tilePrint());
 
             System.out.println("What word would you like to play?");
-            word = scanner.next();
+            word = scanner.next().toLowerCase();
+
 
             System.out.println("What row would you like to play in?");
             row = scanner.nextInt();
