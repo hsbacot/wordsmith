@@ -121,32 +121,32 @@ public class Board {
     }
 
     public void setLetterBag() {
-        setMultipleLetters('E', 12);
-        setMultipleLetters('A', 9);
-        setMultipleLetters('I', 9);
-        setMultipleLetters('O', 8);
-        setMultipleLetters('N', 6);
-        setMultipleLetters('R', 6);
-        setMultipleLetters('T', 6);
-        setMultipleLetters('L', 4);
-        setMultipleLetters('S', 4);
-        setMultipleLetters('U', 4);
-        setMultipleLetters('D', 4);
-        setMultipleLetters('G', 3);
-        setMultipleLetters('B', 2);
-        setMultipleLetters('C', 2);
-        setMultipleLetters('M', 2);
-        setMultipleLetters('P', 2);
-        setMultipleLetters('F', 2);
-        setMultipleLetters('H', 2);
-        setMultipleLetters('V', 2);
-        setMultipleLetters('W', 2);
-        setMultipleLetters('Y', 2);
-        setMultipleLetters('K', 1);
-        setMultipleLetters('J', 1);
-        setMultipleLetters('X', 1);
-        setMultipleLetters('Q', 1);
-        setMultipleLetters('Z', 1);
+        setMultipleLetters('e', 12);
+        setMultipleLetters('a', 9);
+        setMultipleLetters('i', 9);
+        setMultipleLetters('o', 8);
+        setMultipleLetters('n', 6);
+        setMultipleLetters('r', 6);
+        setMultipleLetters('t', 6);
+        setMultipleLetters('l', 4);
+        setMultipleLetters('s', 4);
+        setMultipleLetters('u', 4);
+        setMultipleLetters('d', 4);
+        setMultipleLetters('g', 3);
+        setMultipleLetters('b', 2);
+        setMultipleLetters('c', 2);
+        setMultipleLetters('m', 2);
+        setMultipleLetters('p', 2);
+        setMultipleLetters('f', 2);
+        setMultipleLetters('h', 2);
+        setMultipleLetters('v', 2);
+        setMultipleLetters('w', 2);
+        setMultipleLetters('y', 2);
+        setMultipleLetters('k', 1);
+        setMultipleLetters('j', 1);
+        setMultipleLetters('x', 1);
+        setMultipleLetters('q', 1);
+        setMultipleLetters('z', 1);
     }
 
     public void setMultipleLetters(Character letter, int times) {

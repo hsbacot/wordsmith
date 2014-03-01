@@ -2,10 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Created by hsbacot on 2/24/14.
@@ -35,6 +32,53 @@ public class Move {
 
         setScoreGuide();
         populateDictionary();
+    }
+
+    public boolean moveMatchesHand() {
+        char[] letterArr = this.word.toCharArray();
+        ArrayList<Character> wordAR = new ArrayList<Character>();
+        HashMap<Character, Integer> playLetterCount = new HashMap<Character, Integer>();
+
+        for (int i = 0; i < word.length(); i++) {
+            wordAR.add(word.charAt(i));
+        }
+
+        ArrayList<Character> charPlayed = new ArrayList<Character>();
+
+        for  (int i = 0; i < word.length(); i++) {
+            char letter = wordAR.get(i);
+            if (amountInArrayList(letter, wordAR) > amountInArrayList(letter, this.board.currentPlayer.getHand())) {
+                System.out.println("ERROR: FALSE ON MATCH");
+                return false;
+            }
+            else {
+                charPlayed.add(wordAR.get(i));
+            }
+        }
+
+        for (int i = 0; i < charPlayed.size(); i++) {
+            if ( wordAR.contains(charPlayed.get(i))) {
+                int ind = wordAR.indexOf(charPlayed.get(i));
+                wordAR.remove(ind);
+            }
+        }
+
+        this.board.currentPlayer.setHand(wordAR);
+
+     return true;
+    }
+
+    public int amountInArrayList(char letter, ArrayList<Character> list) {
+        int counter = 0;
+
+        for (int i = 0; i < list.size(); i++){
+            Character listletter = list.get(i);
+            if (Character.getNumericValue(listletter) == Character.getNumericValue(letter)) {
+                counter++;
+            }
+        }
+
+        return counter;
     }
 
     public int[][] neighborPositions() {
