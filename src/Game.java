@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -7,15 +8,28 @@ import java.util.Scanner;
  */
 public class Game {
 
+
     public static void main(String[] args) {
         Board testBoard = new Board();
         String word, direction;
-        int col, row;
+        int col, row, numOfPlayers;
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
-        Player player1 = new Player(); //placeholder
+
+        //Player player1 = new Player(); //placeholder
+
+        System.out.println("How many players?");
+        numOfPlayers = scanner.nextInt();
+        testBoard.createPlayers(numOfPlayers);
+        for (int i = 0; i < numOfPlayers; i++) {
+            testBoard.giveTiles(testBoard.playerList.get(i));
+        }
+
 
         while (counter < 10) {
+
+            System.out.println(testBoard.currentPlayer.getName());
+
             System.out.println("What word would you like to play?");
             word = scanner.next();
 
@@ -41,12 +55,14 @@ public class Game {
             if (newMove.legalMove()){
                 int score = newMove.placeWord();
                 //following deals with "player1" TODO add currentPlayer
-                player1.addToScore(score);
+                Player player = testBoard.getCurrentPlayer();
+                player.addToScore(score);
                 newMove.detectWords();
                 newMove.render();
                 // Also Need to update score
             }
-
+            testBoard.showScore();
+            testBoard.nextPlayer();
             counter++;
         }
     }

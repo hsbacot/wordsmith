@@ -9,6 +9,12 @@ public class Player {
     public ArrayList hand = new ArrayList();//tiles arraylist
     public int score = 0;//score
 
+    Player(String name){
+        this.name = name;
+    }
+
+    Player(){}
+
     public int getScore() {
         return score;
     }
@@ -35,5 +41,9 @@ public class Player {
 
     public void setHand(ArrayList hand) {
         this.hand = hand;
+    }
+
+    public void addTileToHand(Character tile){
+        this.hand.add(tile);
     }
 }

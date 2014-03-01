@@ -3,10 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Created by hsbacot on 2/12/14.
@@ -14,7 +11,8 @@ import java.util.HashSet;
 public class Board {
     private HashSet dictionary = new HashSet();
     private ArrayList<Character> letterBag = new ArrayList<Character>();
-//    private ArrayList<Charset> letterBag = new ArrayList();
+    public ArrayList<Player> playerList = new ArrayList<Player>();
+    public Player currentPlayer = new Player();
 
     Space[][] spaces = new Space[15][15];
 
@@ -30,7 +28,30 @@ public class Board {
         Collections.shuffle(this.letterBag);
     }
 
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
 
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+
+    public void nextPlayer() {
+        int ind = playerList.indexOf(currentPlayer);
+        if (ind + 1 < playerList.size()) {
+            ind = ind +1;
+        }
+        else {
+            ind = 0;
+        }
+        this.setCurrentPlayer(playerList.get(ind));
+    }
+
+    public void showScore() {
+        for(int i = 0; i < playerList.size(); i++) {
+            System.out.println(playerList.get(i).getName() + " " + playerList.get(i).getScore());
+        }
+    }
 
     public void setSpaces() {
         for(int row = 0; row < 15; row++) {
@@ -38,6 +59,18 @@ public class Board {
                 this.spaces[row][col] = new Space();
             }
         }
+    }
+
+    void createPlayers(int players) {
+        String playerName;
+        Scanner scanner = new Scanner(System.in);
+        for(int i = 0; i < players; i++){
+            System.out.println("What is player " + i + "'s name?");
+            playerName = scanner.next();
+            Player player = new Player(playerName);
+            playerList.add(player);
+        }
+        this.setCurrentPlayer(playerList.get(0));
     }
 
     public void setAllLetterMultipliers(int row, int col, int multiplier) {
@@ -134,6 +167,21 @@ public class Board {
         String[] info = new String[]{};
 
         return info;
+    }
+
+    public void giveTiles(Player player){
+        int diff;
+        Character tile;
+        diff = 7 - player.getHand().size();
+        for (int i = 0; i < diff; i++) {
+           if (this.letterBag.size() > 0) {
+            tile = this.letterBag.remove(0);
+            player.addTileToHand(tile);
+           } else {
+               // out of tiles
+               System.out.println("The bag is empty");
+           }
+        }
     }
 
     //print whole board
