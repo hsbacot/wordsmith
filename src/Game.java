@@ -31,7 +31,10 @@ public class Game {
 
         while (counter < 10) {
 
+            testBoard.giveTiles(testBoard.currentPlayer);
+
             System.out.println("\n" + testBoard.currentPlayer.getName());
+            System.out.println(testBoard.currentPlayer.tilePrint());
 
             System.out.println("What word would you like to play?");
             word = scanner.next();
