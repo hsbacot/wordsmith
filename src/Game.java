@@ -52,6 +52,7 @@ public class Game {
                 // Also Need to update score
             }
 
+            // right now the game stops after 10 moves
             counter++;
         }
     }

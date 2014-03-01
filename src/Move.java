@@ -2,7 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.IntBuffer;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -59,12 +61,48 @@ public class Move {
     }
 
     public boolean legalMove() {
-        boolean noO = noOverlap(); //checks if all tiles spaces targeted are free
-        boolean hasN = oneNeighbor(); //checks to make sure there is at least one neighbor
-        boolean noG = noGarbageWords(); //checks to make sure no garbage byproducts are created
-        return noO && hasN && noG;
+//        boolean noO = noOverlap(); //checks if all tiles spaces targeted are free
+//        boolean hasN = oneNeighbor(); //checks to make sure there is at least one neighbor
+//        boolean noG = noGarbageWords(); //checks to make sure no garbage byproducts are created
+//        return noO && hasN && noG;
+        // does the user have the tiles needed to play the word?
+        // iterate through each space and check hand for letter
+        // if the letter is in hand, keep going
+        // if not check the coordinate on the board for the letter
+        // in the coordinate on the board has the letter needed, keep going
+        // else return false
+        // get the list of neighbor coordinates
+        //
+
+        return collision();
     }
 
+    // does the user have the tiles needed to play the word?
+    // does the board have the needed letter in place if the user doesn't have it?
+    // iterate through each space and check hand for letter
+    // if the letter is in hand, keep going
+    // if not check the coordinate on the board for the letter
+    // in the coordinate on the board has the letter needed, keep going
+    // else return false
+    public boolean collision() {
+        int wordLength = this.word.length();
+        ArrayList<ArrayList<Integer>> moveSpaces = new ArrayList<ArrayList<Integer>>();
+        if (this.direction.equals("down")) {
+            for(int i = 0; i < wordLength; i++) {
+                ArrayList<Integer> currentCoords = new ArrayList<Integer>();
+                // row is first coordinate
+                // col is second
+                Integer spaceRow  = new Integer(this.row + i);
+                Integer spaceCol = new Integer(this.col);
+                currentCoords.add(spaceRow);
+                currentCoords.add(spaceCol);
+
+                moveSpaces.add(currentCoords);
+//                moveSpaces[i][1] = this.col;
+            }
+        }
+        return true;
+    }
 
     public boolean noOverlap() {
         if (this.direction.equals("down")) {
