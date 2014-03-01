@@ -4,8 +4,8 @@
 public class Space {
     // Defaults
     public char letter;
-    public int letterMultiplier;
-    public int wordMultiplier;
+    public int letterMultiplier = 1;
+    public int wordMultiplier = 1;
 
     public int getWordMultiplier() {
         return wordMultiplier;

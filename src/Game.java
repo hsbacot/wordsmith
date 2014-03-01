@@ -13,6 +13,7 @@ public class Game {
         int col, row;
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
+        Player player1 = new Player(); //placeholder
 
         while (counter < 10) {
             System.out.println("What word would you like to play?");
@@ -38,7 +39,9 @@ public class Game {
 
             // score words
             if (newMove.legalMove()){
-                newMove.placeWord();
+                int score = newMove.placeWord();
+                //following deals with "player1" TODO add currentPlayer
+                player1.addToScore(score);
                 newMove.detectWords();
                 newMove.render();
                 // Also Need to update score
