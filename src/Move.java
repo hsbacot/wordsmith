@@ -214,50 +214,60 @@ public class Move {
             int spaceCol = this.moveSpaces.get(i).get(1);
 
             if (this.direction.equals("down")) {
-                ArrayList<Integer> neighborCoords = new ArrayList<Integer>();
+                ArrayList<Integer> leftCoords = new ArrayList<Integer>();
+                ArrayList<Integer> rightCoords = new ArrayList<Integer>();
                 // position to the left
-                neighborCoords.add(spaceRow - 1);
-                neighborCoords.add(spaceCol);
+                leftCoords.add(spaceRow);
+                leftCoords.add(spaceCol- 1);
+                this.neighborSpaces.add(leftCoords);
 
                 // position to the right
-                neighborCoords.add(spaceRow + 1);
-                neighborCoords.add(spaceCol);
+                rightCoords.add(spaceRow);
+                rightCoords.add(spaceCol + 1);
+                this.neighborSpaces.add(rightCoords);
 
                 // position top
                 if (i == 0) {
-                    neighborCoords.add(spaceRow);
-                    neighborCoords.add(spaceCol - 1);
+                    ArrayList<Integer> topCoords = new ArrayList<Integer>();
+                    topCoords.add(spaceRow - 1);
+                    topCoords.add(spaceCol);
+                    this.neighborSpaces.add(topCoords);
                 }
                 // position bottom
                 if (i == this.moveSpaces.size() - 1) {
-                    neighborCoords.add(spaceRow);
-                    neighborCoords.add(spaceCol + 1);
+                    ArrayList<Integer> bottomCoords = new ArrayList<Integer>();
+                    bottomCoords.add(spaceRow + 1);
+                    bottomCoords.add(spaceCol);
+                    this.neighborSpaces.add(bottomCoords);
                 }
-                // add list to neighbor space
-                this.neighborSpaces.add(neighborCoords);
             } else {
                 // if the direction is right
-                ArrayList<Integer> neighborCoords = new ArrayList<Integer>();
+                ArrayList<Integer> topCoords = new ArrayList<Integer>();
+                ArrayList<Integer> bottomCoords = new ArrayList<Integer>();
                 // position to the top
-                neighborCoords.add(spaceRow);
-                neighborCoords.add(spaceCol - 1);
+                topCoords.add(spaceRow - 1);
+                topCoords.add(spaceCol);
+                this.neighborSpaces.add(topCoords);
 
                 // position to the bottom
-                neighborCoords.add(spaceRow);
-                neighborCoords.add(spaceCol + 1);
+                bottomCoords.add(spaceRow + 1);
+                bottomCoords.add(spaceCol);
+                this.neighborSpaces.add(bottomCoords);
 
                 // position to the left
                 if (i == 0) {
-                    neighborCoords.add(spaceRow - 1);
-                    neighborCoords.add(spaceCol);
+                    ArrayList<Integer> leftCoords = new ArrayList<Integer>();
+                    leftCoords.add(spaceRow);
+                    leftCoords.add(spaceCol - 1);
+                    this.neighborSpaces.add(leftCoords);
                 }
                 // position to the right
                 if (i == this.moveSpaces.size() - 1) {
-                    neighborCoords.add(spaceRow + 1);
-                    neighborCoords.add(spaceCol);
+                    ArrayList<Integer> rightCoords = new ArrayList<Integer>();
+                    rightCoords.add(spaceRow);
+                    rightCoords.add(spaceCol + 1);
+                    this.neighborSpaces.add(rightCoords);
                 }
-                // add list to neighbor space
-                this.neighborSpaces.add(neighborCoords);
             }
         }
     }
