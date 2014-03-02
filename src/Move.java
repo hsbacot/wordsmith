@@ -56,6 +56,7 @@ public class Move {
             }
         }
 
+        wordAR = this.board.currentPlayer.getHand();
         for (int i = 0; i < charPlayed.size(); i++) {
             if ( wordAR.contains(charPlayed.get(i))) {
                 int ind = wordAR.indexOf(charPlayed.get(i));

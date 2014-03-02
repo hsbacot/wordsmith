@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="184" class="Move" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/word_test.java" line="19" class="word_test" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -71,7 +71,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/word_test.java" line="19" class="word_test" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="59" class="Move" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,7 +99,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="163" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+            <state line="62" column="0" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1530">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,17 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="870">
+            <state line="52" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.5833333" vertical-offset="498" max-vertical-offset="930">
               <folding>
                 <element signature="e#347#348#0" expanded="true" />
                 <element signature="e#375#376#0" expanded="true" />
                 <element signature="e#625#626#0" expanded="true" />
                 <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
                 <element signature="e#918#919#0" expanded="true" />
                 <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,7 +129,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="2659" selection-end="2659" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="16425">
+            <state line="58" column="0" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="17325">
               <folding />
             </state>
           </provider>
@@ -165,16 +168,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Move.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Move.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="0" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.33333334" vertical-offset="2626" max-vertical-offset="5865">
+            <state line="66" column="0" selection-start="2265" selection-end="2265" vertical-scroll-proportion="-5.1923075" vertical-offset="855" max-vertical-offset="5880">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#313#321#0" expanded="true" />
+                <element signature="e#378#386#0" expanded="true" />
+                <element signature="e#624#644#0" expanded="true" />
+                <element signature="e#829#836#0" expanded="true" />
                 <element signature="e#1299#1310#0" expanded="true" />
                 <element signature="e#1379#1399#0" expanded="true" />
                 <element signature="e#1560#1571#0" expanded="true" />
-                <element signature="e#9651#9662#0" expanded="true" />
+                <element signature="e#9704#9715#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -213,11 +220,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/Spaces.java" />
         <option value="$PROJECT_DIR$/src/Space.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
-        <option value="$PROJECT_DIR$/src/Move.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/word_test.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/Move.java" />
       </list>
     </option>
   </component>
@@ -310,7 +317,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.word_test">
+  <component name="RunManager" selected="Application.Game">
     <configuration default="false" name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <option name="VM_PARAMETERS" />
@@ -488,8 +495,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.word_test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="1" class="java.lang.String" itemvalue="Application.word_test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -508,7 +515,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -516,7 +523,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4117647" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4117647" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -527,7 +534,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26108727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4168798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4168798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -573,8 +580,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,10 +630,14 @@
         <state line="203" column="37" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="5040">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#313#321#0" expanded="true" />
+            <element signature="e#378#386#0" expanded="true" />
+            <element signature="e#624#644#0" expanded="true" />
+            <element signature="e#829#836#0" expanded="true" />
             <element signature="e#1299#1310#0" expanded="true" />
             <element signature="e#1379#1399#0" expanded="true" />
             <element signature="e#1560#1571#0" expanded="true" />
-            <element signature="e#9651#9662#0" expanded="true" />
+            <element signature="e#9704#9715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,8 +659,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -692,10 +709,14 @@
         <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#313#321#0" expanded="true" />
+            <element signature="e#378#386#0" expanded="true" />
+            <element signature="e#624#644#0" expanded="true" />
+            <element signature="e#829#836#0" expanded="true" />
             <element signature="e#1299#1310#0" expanded="true" />
             <element signature="e#1379#1399#0" expanded="true" />
             <element signature="e#1560#1571#0" expanded="true" />
-            <element signature="e#9651#9662#0" expanded="true" />
+            <element signature="e#9704#9715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,8 +738,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,10 +788,14 @@
         <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#313#321#0" expanded="true" />
+            <element signature="e#378#386#0" expanded="true" />
+            <element signature="e#624#644#0" expanded="true" />
+            <element signature="e#829#836#0" expanded="true" />
             <element signature="e#1299#1310#0" expanded="true" />
             <element signature="e#1379#1399#0" expanded="true" />
             <element signature="e#1560#1571#0" expanded="true" />
-            <element signature="e#9651#9662#0" expanded="true" />
+            <element signature="e#9704#9715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,8 +817,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -836,10 +867,14 @@
         <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="4470">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#313#321#0" expanded="true" />
+            <element signature="e#378#386#0" expanded="true" />
+            <element signature="e#624#644#0" expanded="true" />
+            <element signature="e#829#836#0" expanded="true" />
             <element signature="e#1299#1310#0" expanded="true" />
             <element signature="e#1379#1399#0" expanded="true" />
             <element signature="e#1560#1571#0" expanded="true" />
-            <element signature="e#9651#9662#0" expanded="true" />
+            <element signature="e#9704#9715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,8 +896,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -913,8 +951,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,8 +1006,11 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -990,7 +1034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2659" selection-end="2659" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="15450">
+        <state line="58" column="0" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="17325">
           <folding />
         </state>
       </provider>
@@ -999,29 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="633" column="0" selection-start="23176" selection-end="23176" vertical-scroll-proportion="1.3448275" vertical-offset="8136" max-vertical-offset="17325">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="870">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="163" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,15 +1092,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="0" selection-start="5756" selection-end="5756" vertical-scroll-proportion="0.33333334" vertical-offset="2626" max-vertical-offset="5865">
+        <state line="62" column="0" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2265" selection-end="2265" vertical-scroll-proportion="-5.1923075" vertical-offset="855" max-vertical-offset="5880">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#313#321#0" expanded="true" />
+            <element signature="e#378#386#0" expanded="true" />
+            <element signature="e#624#644#0" expanded="true" />
+            <element signature="e#829#836#0" expanded="true" />
             <element signature="e#1299#1310#0" expanded="true" />
             <element signature="e#1379#1399#0" expanded="true" />
             <element signature="e#1560#1571#0" expanded="true" />
-            <element signature="e#9651#9662#0" expanded="true" />
+            <element signature="e#9704#9715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.5833333" vertical-offset="498" max-vertical-offset="930">
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
