@@ -55,23 +55,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/word_test.java" line="18" class="word_test" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -81,10 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1560">
+            <state line="69" column="92" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.3504673" vertical-offset="885" max-vertical-offset="1575">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,15 +98,14 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="18360">
+            <state line="34" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="19290">
               <folding>
-                <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-                <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+                <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -165,7 +148,7 @@
       <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Move.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="401" column="44" selection-start="14836" selection-end="14836" vertical-scroll-proportion="-5.730769" vertical-offset="5866" max-vertical-offset="6945">
+            <state line="77" column="69" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-16.615385" vertical-offset="723" max-vertical-offset="2070">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#339#347#0" expanded="true" />
@@ -177,20 +160,34 @@
                 <element signature="e#1566#1577#0" expanded="true" />
                 <element signature="e#1646#1666#0" expanded="true" />
                 <element signature="e#1827#1838#0" expanded="true" />
-                <element signature="e#4932#4941#0" expanded="true" />
-                <element signature="e#5438#5447#0" expanded="true" />
-                <element signature="e#7458#7467#0" expanded="true" />
-                <element signature="e#8376#8385#0" expanded="true" />
-                <element signature="e#13185#13196#0" expanded="true" />
+                <element signature="e#2783#2794#0" expanded="true" />
+                <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+                <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+                <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+                <element signature="method#collision#0;class#Move#0" expanded="false" />
+                <element signature="e#5359#5368#0" expanded="true" />
+                <element signature="e#5865#5874#0" expanded="true" />
+                <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+                <element signature="e#7885#7894#0" expanded="true" />
+                <element signature="e#8803#8812#0" expanded="true" />
+                <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+                <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+                <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+                <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+                <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+                <element signature="e#13612#13623#0" expanded="true" />
+                <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+                <element signature="method#render#0;class#Move#0" expanded="false" />
+                <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word_test.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="word_test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/word_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="63" selection-start="556" selection-end="556" vertical-scroll-proportion="0.78971964" vertical-offset="7" max-vertical-offset="435">
+            <state line="7" column="98" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="435">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -221,10 +218,10 @@
         <option value="$PROJECT_DIR$/src/Spaces.java" />
         <option value="$PROJECT_DIR$/src/Space.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
-        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/word_test.java" />
         <option value="$PROJECT_DIR$/src/Move.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
       </list>
     </option>
   </component>
@@ -317,7 +314,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.word_test">
+  <component name="RunManager" selected="Application.Game">
     <configuration default="false" name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <option name="VM_PARAMETERS" />
@@ -495,8 +492,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.word_test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="1" class="java.lang.String" itemvalue="Application.word_test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -593,13 +590,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="12480">
           <folding>
-            <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -648,11 +644,25 @@
             <element signature="e#1566#1577#0" expanded="true" />
             <element signature="e#1646#1666#0" expanded="true" />
             <element signature="e#1827#1838#0" expanded="true" />
-            <element signature="e#4932#4941#0" expanded="true" />
-            <element signature="e#5438#5447#0" expanded="true" />
-            <element signature="e#7458#7467#0" expanded="true" />
-            <element signature="e#8376#8385#0" expanded="true" />
-            <element signature="e#13185#13196#0" expanded="true" />
+            <element signature="e#2783#2794#0" expanded="true" />
+            <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+            <element signature="method#collision#0;class#Move#0" expanded="false" />
+            <element signature="e#5359#5368#0" expanded="true" />
+            <element signature="e#5865#5874#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#7885#7894#0" expanded="true" />
+            <element signature="e#8803#8812#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+            <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#13612#13623#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -687,13 +697,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10185">
           <folding>
-            <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -742,11 +751,25 @@
             <element signature="e#1566#1577#0" expanded="true" />
             <element signature="e#1646#1666#0" expanded="true" />
             <element signature="e#1827#1838#0" expanded="true" />
-            <element signature="e#4932#4941#0" expanded="true" />
-            <element signature="e#5438#5447#0" expanded="true" />
-            <element signature="e#7458#7467#0" expanded="true" />
-            <element signature="e#8376#8385#0" expanded="true" />
-            <element signature="e#13185#13196#0" expanded="true" />
+            <element signature="e#2783#2794#0" expanded="true" />
+            <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+            <element signature="method#collision#0;class#Move#0" expanded="false" />
+            <element signature="e#5359#5368#0" expanded="true" />
+            <element signature="e#5865#5874#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#7885#7894#0" expanded="true" />
+            <element signature="e#8803#8812#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+            <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#13612#13623#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -781,13 +804,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9555">
           <folding>
-            <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -836,11 +858,25 @@
             <element signature="e#1566#1577#0" expanded="true" />
             <element signature="e#1646#1666#0" expanded="true" />
             <element signature="e#1827#1838#0" expanded="true" />
-            <element signature="e#4932#4941#0" expanded="true" />
-            <element signature="e#5438#5447#0" expanded="true" />
-            <element signature="e#7458#7467#0" expanded="true" />
-            <element signature="e#8376#8385#0" expanded="true" />
-            <element signature="e#13185#13196#0" expanded="true" />
+            <element signature="e#2783#2794#0" expanded="true" />
+            <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+            <element signature="method#collision#0;class#Move#0" expanded="false" />
+            <element signature="e#5359#5368#0" expanded="true" />
+            <element signature="e#5865#5874#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#7885#7894#0" expanded="true" />
+            <element signature="e#8803#8812#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+            <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#13612#13623#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,13 +911,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11925">
           <folding>
-            <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -930,11 +965,25 @@
             <element signature="e#1566#1577#0" expanded="true" />
             <element signature="e#1646#1666#0" expanded="true" />
             <element signature="e#1827#1838#0" expanded="true" />
-            <element signature="e#4932#4941#0" expanded="true" />
-            <element signature="e#5438#5447#0" expanded="true" />
-            <element signature="e#7458#7467#0" expanded="true" />
-            <element signature="e#8376#8385#0" expanded="true" />
-            <element signature="e#13185#13196#0" expanded="true" />
+            <element signature="e#2783#2794#0" expanded="true" />
+            <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+            <element signature="method#collision#0;class#Move#0" expanded="false" />
+            <element signature="e#5359#5368#0" expanded="true" />
+            <element signature="e#5865#5874#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#7885#7894#0" expanded="true" />
+            <element signature="e#8803#8812#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+            <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#13612#13623#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,15 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1560">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="930">
@@ -1130,15 +1170,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="18360">
+        <state line="34" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="18030">
           <folding>
-            <marker date="1393786972000" expanded="true" signature="59:67355" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="867:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="2882:2955" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67344" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67329" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67316" placeholder="..." />
-            <marker date="1393786972000" expanded="true" signature="67281:67298" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="59:73215" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="867:2882" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73204" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73189" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73176" placeholder="..." />
+            <marker date="1393789113000" expanded="true" signature="73141:73158" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1180,9 +1219,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/word_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="98" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="435">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Move.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="401" column="44" selection-start="14836" selection-end="14836" vertical-scroll-proportion="-5.730769" vertical-offset="5866" max-vertical-offset="6945">
+        <state line="77" column="69" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-16.615385" vertical-offset="723" max-vertical-offset="2070">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#339#347#0" expanded="true" />
@@ -1194,20 +1243,33 @@
             <element signature="e#1566#1577#0" expanded="true" />
             <element signature="e#1646#1666#0" expanded="true" />
             <element signature="e#1827#1838#0" expanded="true" />
-            <element signature="e#4932#4941#0" expanded="true" />
-            <element signature="e#5438#5447#0" expanded="true" />
-            <element signature="e#7458#7467#0" expanded="true" />
-            <element signature="e#8376#8385#0" expanded="true" />
-            <element signature="e#13185#13196#0" expanded="true" />
+            <element signature="e#2783#2794#0" expanded="true" />
+            <element signature="method#amountInArrayList#0;class#Move#0" expanded="false" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="method#legalMove#0;class#Move#0" expanded="false" />
+            <element signature="method#collision#0;class#Move#0" expanded="false" />
+            <element signature="e#5359#5368#0" expanded="true" />
+            <element signature="e#5865#5874#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#7885#7894#0" expanded="true" />
+            <element signature="e#8803#8812#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
+            <element signature="method#scoreWord#0;class#Move#0" expanded="false" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#13612#13623#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/word_test.java">
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="63" selection-start="556" selection-end="556" vertical-scroll-proportion="0.78971964" vertical-offset="7" max-vertical-offset="435">
+        <state line="69" column="92" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.3504673" vertical-offset="885" max-vertical-offset="1575">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

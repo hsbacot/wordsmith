@@ -60,17 +60,28 @@ public class Move {
             }
         }
 
-        wordAR = this.board.currentPlayer.getHand();
-        for (int i = 0; i < charPlayed.size(); i++) {
-            if ( wordAR.contains(charPlayed.get(i))) {
-                int ind = wordAR.indexOf(charPlayed.get(i));
-                wordAR.remove(ind);
-            }
-        }
+//        wordAR = this.board.currentPlayer.getHand();
+//        for (int i = 0; i < charPlayed.size(); i++) {
+//            if ( wordAR.contains(charPlayed.get(i))) {
+//                int ind = wordAR.indexOf(charPlayed.get(i));
+//                wordAR.remove(ind);
+//            }
+//        }
 
         this.board.currentPlayer.setHand(wordAR);
 
      return true;
+    }
+
+    public void depleteHand() {
+        ArrayList<Character> handAR = this.board.currentPlayer.getHand();
+        ArrayList<Character> charPlayed = new ArrayList<Character>();
+        for (int i = 0; i < charPlayed.size(); i++) {
+            if ( handAR.contains(charPlayed.get(i))) {
+                int ind = handAR.indexOf(charPlayed.get(i));
+                handAR.remove(ind);
+            }
+        }
     }
 
     public int amountInArrayList(char letter, ArrayList<Character> list) {
