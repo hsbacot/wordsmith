@@ -15,6 +15,7 @@ public class word_test {
     int col = 7;
     String direction = "down";
     Move newMove = new Move(word, row, col, direction, testBoard);
+    System.out.println("The dictionary size is "+ newMove.dictionary.size());
     int score = newMove.placeWord();
 
     newMove.render();

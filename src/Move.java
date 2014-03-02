@@ -9,7 +9,7 @@ import java.util.*;
  * Created by hsbacot on 2/24/14.
  */
 public class Move {
-    private HashSet<String> dictionary = new HashSet();
+    public HashSet<String> dictionary = new HashSet();
     public ArrayList<String> words = new ArrayList<String>();
     public ArrayList<String> oldWords = new ArrayList<String>();
     public ArrayList<String> wordsPerTurn;
@@ -404,11 +404,12 @@ public class Move {
             BufferedReader in = new BufferedReader(new FileReader("words"));
             String line = null;
             while((line = in.readLine()) != null) {
-                this.dictionary.add(in.readLine());
+                this.dictionary.add(line);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            System.out.println("problem reading the dictionary " + e);
             e.printStackTrace();
         }
     }
