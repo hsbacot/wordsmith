@@ -188,6 +188,12 @@ public class Move {
         if (this.direction.equals("down")) {
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
+
+            System.out.println("word length reach: " + this.word.length() + " " + this.row);
+            System.out.println("check word: " + checkWord(this.word));
+            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+            System.out.println("word.length" + this.word.length());
+
             if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
@@ -207,7 +213,12 @@ public class Move {
             //rightward word check
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
-            if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
+            System.out.println("word length reach: " + this.word.length() + " " + this.col);
+            System.out.println("check word: " + checkWord(this.word));
+            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+            System.out.println("word.length" + this.word.length());
+
+            if ((this.word.length() + this.col) < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
