@@ -54,8 +54,8 @@ public class Game {
             Move newMove = new Move(word, row, col, direction, testBoard);
 
             // make sure all board is valid, if not throw error
-            newMove.detectWords();
-            newMove.oldWords = newMove.words;
+//            newMove.detectWords();
+//            newMove.oldWords = newMove.words;
 
             // detect if more words are created on play
 
@@ -65,8 +65,9 @@ public class Game {
                 //following deals with "player1" TODO add currentPlayer
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
-                newMove.detectWords();
+                //newMove.detectWords();
                 newMove.render();
+                newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
             }
             testBoard.showScore();

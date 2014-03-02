@@ -9,7 +9,7 @@ import java.util.*;
  * Created by hsbacot on 2/24/14.
  */
 public class Move {
-    private HashSet<String> dictionary = new HashSet();
+    public HashSet<String> dictionary = new HashSet();
     public ArrayList<String> words = new ArrayList<String>();
     public ArrayList<String> oldWords = new ArrayList<String>();
     public ArrayList<String> wordsPerTurn;
@@ -60,16 +60,28 @@ public class Move {
             }
         }
 
-        for (int i = 0; i < charPlayed.size(); i++) {
-            if ( wordAR.contains(charPlayed.get(i))) {
-                int ind = wordAR.indexOf(charPlayed.get(i));
-                wordAR.remove(ind);
-            }
-        }
+//        wordAR = this.board.currentPlayer.getHand();
+//        for (int i = 0; i < charPlayed.size(); i++) {
+//            if ( wordAR.contains(charPlayed.get(i))) {
+//                int ind = wordAR.indexOf(charPlayed.get(i));
+//                wordAR.remove(ind);
+//            }
+//        }
 
         this.board.currentPlayer.setHand(wordAR);
 
      return true;
+    }
+
+    public void depleteHand() {
+        ArrayList<Character> handAR = this.board.currentPlayer.getHand();
+        ArrayList<Character> charPlayed = new ArrayList<Character>();
+        for (int i = 0; i < charPlayed.size(); i++) {
+            if ( handAR.contains(charPlayed.get(i))) {
+                int ind = handAR.indexOf(charPlayed.get(i));
+                handAR.remove(ind);
+            }
+        }
     }
 
     public int amountInArrayList(char letter, ArrayList<Character> list) {
@@ -268,6 +280,12 @@ public class Move {
         if (this.direction.equals("down")) {
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
+
+            System.out.println("word length reach: " + this.word.length() + " " + this.row);
+            System.out.println("check word: " + checkWord(this.word));
+            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+            System.out.println("word.length" + this.word.length());
+
             if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
@@ -287,7 +305,12 @@ public class Move {
             //rightward word check
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
-            if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
+            System.out.println("word length reach: " + this.word.length() + " " + this.col);
+            System.out.println("check word: " + checkWord(this.word));
+            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+            System.out.println("word.length" + this.word.length());
+
+            if ((this.word.length() + this.col) < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
@@ -402,11 +425,12 @@ public class Move {
             BufferedReader in = new BufferedReader(new FileReader("words"));
             String line = null;
             while((line = in.readLine()) != null) {
-                this.dictionary.add(in.readLine());
+                this.dictionary.add(line);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            System.out.println("problem reading the dictionary " + e);
             e.printStackTrace();
         }
     }

@@ -49,7 +49,7 @@ public class Player {
     }
 
     public void setHand(ArrayList hand) {
-        this.hand = hand;
+        this.hand = hand; //hand size goes to 0
     }
 
     public void addTileToHand(Character tile){
