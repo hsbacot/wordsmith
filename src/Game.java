@@ -29,7 +29,7 @@ public class Game {
         fakeMove.render();
 
 
-        while (counter < 10) {
+        while (testBoard.tilesLeft()) {
 
             testBoard.giveTiles(testBoard.currentPlayer);
 

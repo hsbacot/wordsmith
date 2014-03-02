@@ -28,6 +28,10 @@ public class Board {
         Collections.shuffle(this.letterBag);
     }
 
+    public boolean tilesLeft() {
+        return !letterBag.isEmpty();
+    }
+
     public Player getCurrentPlayer() {
         return currentPlayer;
     }

@@ -82,6 +82,8 @@ public class Move {
                 handAR.remove(ind);
             }
         }
+
+        this.board.currentPlayer.setHand(handAR);
     }
 
     public int amountInArrayList(char letter, ArrayList<Character> list) {
@@ -316,7 +318,7 @@ public class Move {
                 for(int i = 0; i < this.word.length(); i++){
                     placeLetter(letterArr[i], this.row, this.col + i);
                     wordVal += this.scoreGuide.get(letterArr[i]) * this.spaces[this.row][this.col + i].getLetterMultiplier();
-                    wordMultiplier *= this.spaces[this.row + i][this.col].getWordMultiplier();
+                    wordMultiplier *= this.spaces[this.row][this.col + i].getWordMultiplier();
 
                     spacesPlayed.add(this.board.spaces[row][col+i]);
                 }
