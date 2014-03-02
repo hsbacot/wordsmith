@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.IntBuffer;
 import java.util.*;
 
 /**
@@ -21,6 +22,9 @@ public class Move {
     private Board board;
     //added spacesPlayed to keep track of spaces whose bonuses should be set to 1 by removeBonuses
     private ArrayList<Space> spacesPlayed = new ArrayList<Space>();
+    // Added to store space in move to track collision and neighbors
+    ArrayList<ArrayList<Integer>> moveSpaces = new ArrayList<ArrayList<Integer>>();
+    ArrayList<ArrayList<Integer>> neighborSpaces = new ArrayList<ArrayList<Integer>>();
 
     public Move(String word, int row, int col, String direction, Board board){
         this.word = word;
@@ -107,78 +111,144 @@ public class Move {
     }
 
     public boolean legalMove() {
-        boolean noO = noOverlap(); //checks if all tiles spaces targeted are free
-        boolean hasN = oneNeighbor(); //checks to make sure there is at least one neighbor
-        boolean noG = noGarbageWords(); //checks to make sure no garbage byproducts are created
-        return noO && hasN && noG;
+        // does the user have the tiles needed to play the word?
+        // iterate through each space and check hand for letter
+        // if the letter is in hand, keep going
+        // if not check the coordinate on the board for the letter
+        // in the coordinate on the board has the letter needed, keep going
+        // else return false
+        // get the list of neighbor coordinates
+        //
+        if (moveMatchesHand() && collision()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
+    // does the user have the tiles needed to play the word?
+    // does the board have the needed letter in place if the user doesn't have it?
+    // iterate through each space and check hand for letter
+    // if the letter is in hand, keep going
+    // if not check the coordinate on the board for the letter
+    // in the coordinate on the board has the letter needed, keep going
+    // else return false
+    public boolean collision() {
+        int wordLength = this.word.length();
+        boolean verdict = true;
 
-    public boolean noOverlap() {
+        // adds coordinates of word to be played to a list
         if (this.direction.equals("down")) {
+            for(int i = 0; i < wordLength; i++) {
+                ArrayList<Integer> currentCoords = new ArrayList<Integer>();
+                // row is first coordinate
+                // col is second
+                Integer spaceRow  = new Integer(this.row + i);
+                Integer spaceCol = new Integer(this.col);
+                currentCoords.add(spaceRow);
+                currentCoords.add(spaceCol);
 
-            for(int i = 0; i < this.word.length(); i++){
-                if (this.board.spaces[this.row + i][this.col].getLetter() != '\u0000') {
-                    System.out.print("no overlap error");
-                    return false;
-                }
+                this.moveSpaces.add(currentCoords);
             }
         }
         else {
-            for(int i = 0; i < this.word.length(); i++){
-                if (this.board.spaces[this.row][this.col + i].getLetter() != '\u0000') {
-                    System.out.print("no overlap error");
-                    return false;
-                }
+            for(int i = 0; i < wordLength; i++) {
+                ArrayList<Integer> currentCoords = new ArrayList<Integer>();
+                // row is first coordinate
+                // col is second
+                Integer spaceRow  = new Integer(this.row);
+                Integer spaceCol = new Integer(this.col + i);
+                currentCoords.add(spaceRow);
+                currentCoords.add(spaceCol);
+
+                this.moveSpaces.add(currentCoords);
             }
         }
-        return true;
 
+        // checking if board has the character needed to play the word
+        // if not, check to see if the player has the character as a tile
+        for (int i = 0; i < this.moveSpaces.size(); i++) {
+            int spaceRow = this.moveSpaces.get(i).get(0);
+            int spaceCol = this.moveSpaces.get(i).get(1);
+            char[] wordCharacters = this.word.toCharArray();
+            Character letterInWord = wordCharacters[i];
+
+            Character letterAtSpace = this.spaces[spaceRow][spaceCol].getLetter();
+            if (letterAtSpace == letterInWord) {
+                System.out.println("Valid play, letter needed is in space");
+                verdict = true;
+            } else if (this.board.currentPlayer.getHand().contains(letterInWord)) {
+                System.out.println("Valid play, letter needed is in player hand");
+                verdict = true;
+            } else {
+                System.out.println("Invalid Play");
+                verdict = false;
+            }
+        }
+        // populates neighbor space list
+        addNeighborSpaces();
+
+        if (verdict){
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public boolean oneNeighbor() {
-        boolean oneNeighbor = false;
-        if (this.direction.equals("down")) {
+    // must be run after collision(), where moveSpace is populated
+    public void addNeighborSpaces() {
+        for (int i = 0; i < this.moveSpaces.size(); i++) {
+            // get row and column of each moveSpaces element
+            int spaceRow = this.moveSpaces.get(i).get(0);
+            int spaceCol = this.moveSpaces.get(i).get(1);
 
-            for(int i = 0; i < this.word.length(); i++){
-                if (hasNeighbor(this.row+i, this.col)) {
-                    oneNeighbor = true;
+            if (this.direction.equals("down")) {
+                ArrayList<Integer> neighborCoords = new ArrayList<Integer>();
+                // position to the left
+                neighborCoords.add(spaceRow - 1);
+                neighborCoords.add(spaceCol);
+
+                // position to the right
+                neighborCoords.add(spaceRow + 1);
+                neighborCoords.add(spaceCol);
+
+                // position top
+                if (i == 0) {
+                    neighborCoords.add(spaceRow);
+                    neighborCoords.add(spaceCol - 1);
                 }
-            }
-        }
-        else {
-
-            for(int i = 0; i < this.word.length(); i++){
-                if (hasNeighbor(this.row, this.col+i)) {
-                    oneNeighbor = true;
+                // position bottom
+                if (i == this.moveSpaces.size() - 1) {
+                    neighborCoords.add(spaceRow);
+                    neighborCoords.add(spaceCol + 1);
                 }
+                // add list to neighbor space
+                this.neighborSpaces.add(neighborCoords);
+            } else {
+                // if the direction is right
+                ArrayList<Integer> neighborCoords = new ArrayList<Integer>();
+                // position to the top
+                neighborCoords.add(spaceRow);
+                neighborCoords.add(spaceCol - 1);
+
+                // position to the bottom
+                neighborCoords.add(spaceRow);
+                neighborCoords.add(spaceCol + 1);
+
+                // position to the left
+                if (i == 0) {
+                    neighborCoords.add(spaceRow - 1);
+                    neighborCoords.add(spaceCol);
+                }
+                // position to the right
+                if (i == this.moveSpaces.size() - 1) {
+                    neighborCoords.add(spaceRow + 1);
+                    neighborCoords.add(spaceCol);
+                }
+                // add list to neighbor space
+                this.neighborSpaces.add(neighborCoords);
             }
         }
-        if (oneNeighbor == false) {
-            System.out.print("one neighbor false");
-        }
-        return oneNeighbor;
-    }
-
-    public boolean noGarbageWords() {
-        //if has neighbor
-        //create string in that direction until blank, HARD
-        //check if string is word
-        return true;
-    }
-
-    public boolean hasNeighbor(int row, int col) {
-        int[][] neighbors = neighborPositions();
-        for(int i = 0; i < 4; i++) {
-            if (this.board.spaces[neighbors[i][0]][neighborPositions()[i][1]].getLetter() != '\u0000') {
-                return true;
-            } else if (row == 7 && col == 7) {
-                // first move must be in the center
-                return true;
-            }
-        }
-        System.out.print("has neighbor error");
-        return false;
     }
 
     public int placeWord() {
