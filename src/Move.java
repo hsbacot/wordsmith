@@ -49,16 +49,7 @@ public class Move {
 
         ArrayList<Character> charPlayed = new ArrayList<Character>();
 
-        for  (int i = 0; i < word.length(); i++) {
-            char letter = wordAR.get(i);
-            if (amountInArrayList(letter, wordAR) > amountInArrayList(letter, this.board.currentPlayer.getHand())) {
-                System.out.println("ERROR: FALSE ON MATCH");
-                return false;
-            }
-            else {
-                charPlayed.add(wordAR.get(i));
-            }
-        }
+
 
 //        wordAR = this.board.currentPlayer.getHand();
 //        for (int i = 0; i < charPlayed.size(); i++) {
@@ -197,6 +188,12 @@ public class Move {
             }
         }
         // populates neighbor space list
+
+
+
+
+
+
         addNeighborSpaces();
 
         if (verdict){
@@ -440,7 +437,7 @@ public class Move {
         for(int row = 0; row < 15; row++) {
             for(int col = 0; col < 15; col++) {
                 System.out.print(" ");
-                System.out.print(this.spaces[row][col].getSpaceValue());
+                System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
                 System.out.print(" ");
             }
             System.out.println();
