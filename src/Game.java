@@ -60,7 +60,7 @@ public class Game {
             // detect if more words are created on play
 
             // score words
-            if (newMove.moveMatchesHand()){
+            if (newMove.legalMove()){
                 int score = newMove.placeWord();
                 //following deals with "player1" TODO add currentPlayer
                 Player player = testBoard.getCurrentPlayer();
