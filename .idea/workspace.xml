@@ -55,7 +55,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="262" class="Move" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="241" class="Move" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -68,10 +99,8 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1942" selection-end="1942" vertical-scroll-proportion="-5.1923075" vertical-offset="795" max-vertical-offset="1575">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="73" column="0" selection-start="2511" selection-end="2511" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="1605">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,18 +108,22 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="930">
+            <state line="55" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="900">
               <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="false" />
+                <element signature="e#884#885#0" expanded="false" />
+                <element signature="e#988#989#0" expanded="false" />
+                <element signature="e#1042#1043#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="439" column="0" selection-start="15840" selection-end="15840" vertical-scroll-proportion="0.0" vertical-offset="6110" max-vertical-offset="17325">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,9 +131,8 @@
       <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="25" selection-start="5643" selection-end="5652" vertical-scroll-proportion="-5.1923075" vertical-offset="2490" max-vertical-offset="2940">
+            <state line="182" column="0" selection-start="5885" selection-end="5885" vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="2865">
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#972#973#0" expanded="true" />
                 <element signature="e#1008#1009#0" expanded="true" />
                 <element signature="e#1066#1067#0" expanded="true" />
@@ -113,17 +145,12 @@
       <file leaf-file-name="Space.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Space.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="930">
+            <state line="28" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="900">
               <folding>
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="false" />
+                <element signature="e#357#358#0" expanded="false" />
+                <element signature="e#497#498#0" expanded="false" />
+                <element signature="e#553#554#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -132,7 +159,7 @@
       <file leaf-file-name="Move.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Move.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3375">
+            <state line="212" column="0" selection-start="7349" selection-end="7349" vertical-scroll-proportion="-1.2051282" vertical-offset="3333" max-vertical-offset="5835">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#339#347#0" expanded="true" />
@@ -141,27 +168,27 @@
                 <element signature="e#855#862#0" expanded="true" />
                 <element signature="e#995#1015#0" expanded="true" />
                 <element signature="e#1083#1103#0" expanded="true" />
-                <element signature="e#1566#1577#0" expanded="true" />
-                <element signature="e#1646#1666#0" expanded="true" />
+                <element signature="e#1167#1175#0" expanded="true" />
+                <element signature="e#1638#1649#0" expanded="true" />
+                <element signature="e#1718#1738#0" expanded="true" />
                 <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-                <element signature="method#collision#0;class#Move#0" expanded="false" />
-                <element signature="e#4986#4995#0" expanded="true" />
-                <element signature="e#5492#5501#0" expanded="true" />
+                <element signature="e#5093#5102#0" expanded="true" />
+                <element signature="e#5599#5608#0" expanded="true" />
+                <element signature="e#7276#7296#0" expanded="true" />
+                <element signature="e#7779#7790#0" expanded="true" />
                 <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-                <element signature="e#7514#7523#0" expanded="true" />
-                <element signature="e#7589#7598#0" expanded="true" />
-                <element signature="e#8095#8104#0" expanded="true" />
-                <element signature="e#8433#8442#0" expanded="true" />
-                <element signature="e#8749#8758#0" expanded="true" />
-                <element signature="e#8825#8834#0" expanded="true" />
-                <element signature="e#9341#9350#0" expanded="true" />
-                <element signature="e#9687#9696#0" expanded="true" />
+                <element signature="e#11286#11295#0" expanded="true" />
+                <element signature="e#11361#11370#0" expanded="true" />
+                <element signature="e#11867#11876#0" expanded="true" />
+                <element signature="e#12205#12214#0" expanded="true" />
+                <element signature="e#12521#12530#0" expanded="true" />
+                <element signature="e#12597#12606#0" expanded="true" />
+                <element signature="e#13113#13122#0" expanded="true" />
+                <element signature="e#13459#13468#0" expanded="true" />
                 <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-                <element signature="method#checkWord#0;class#Move#0" expanded="false" />
                 <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-                <element signature="e#13882#13893#0" expanded="true" />
+                <element signature="e#17654#17665#0" expanded="true" />
                 <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-                <element signature="method#render#0;class#Move#0" expanded="false" />
                 <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
               </folding>
             </state>
@@ -171,19 +198,7 @@
       <file leaf-file-name="word_test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/word_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="98" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="435">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="words" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/words">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49798" column="0" selection-start="516357" selection-end="516362" vertical-scroll-proportion="-5.1538463" vertical-offset="746836" max-vertical-offset="3538380">
+            <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -203,16 +218,17 @@
         <option value="$PROJECT_DIR$/src/Space.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/word_test.java" />
-        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Move.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1206" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,6 +256,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,33 +265,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordsmith" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordsmith" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -377,6 +369,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -402,19 +407,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -495,7 +487,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="53" y="22" width="1206" height="778" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -504,27 +496,27 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4117647" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41043723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32722145" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26108727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4168798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26036483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41607898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -546,578 +538,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1335">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="675">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="44" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3855">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="960">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="37" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="5040">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#347#0" expanded="true" />
-            <element signature="e#404#412#0" expanded="true" />
-            <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#855#862#0" expanded="true" />
-            <element signature="e#995#1015#0" expanded="true" />
-            <element signature="e#1083#1103#0" expanded="true" />
-            <element signature="e#1566#1577#0" expanded="true" />
-            <element signature="e#1646#1666#0" expanded="true" />
-            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="method#collision#0;class#Move#0" expanded="false" />
-            <element signature="e#4986#4995#0" expanded="true" />
-            <element signature="e#5492#5501#0" expanded="true" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#7514#7523#0" expanded="true" />
-            <element signature="e#7589#7598#0" expanded="true" />
-            <element signature="e#8095#8104#0" expanded="true" />
-            <element signature="e#8433#8442#0" expanded="true" />
-            <element signature="e#8749#8758#0" expanded="true" />
-            <element signature="e#8825#8834#0" expanded="true" />
-            <element signature="e#9341#9350#0" expanded="true" />
-            <element signature="e#9687#9696#0" expanded="true" />
-            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
-            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-            <element signature="e#13882#13893#0" expanded="true" />
-            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-            <element signature="method#render#0;class#Move#0" expanded="false" />
-            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3390">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#347#0" expanded="true" />
-            <element signature="e#404#412#0" expanded="true" />
-            <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#855#862#0" expanded="true" />
-            <element signature="e#995#1015#0" expanded="true" />
-            <element signature="e#1083#1103#0" expanded="true" />
-            <element signature="e#1566#1577#0" expanded="true" />
-            <element signature="e#1646#1666#0" expanded="true" />
-            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="method#collision#0;class#Move#0" expanded="false" />
-            <element signature="e#4986#4995#0" expanded="true" />
-            <element signature="e#5492#5501#0" expanded="true" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#7514#7523#0" expanded="true" />
-            <element signature="e#7589#7598#0" expanded="true" />
-            <element signature="e#8095#8104#0" expanded="true" />
-            <element signature="e#8433#8442#0" expanded="true" />
-            <element signature="e#8749#8758#0" expanded="true" />
-            <element signature="e#8825#8834#0" expanded="true" />
-            <element signature="e#9341#9350#0" expanded="true" />
-            <element signature="e#9687#9696#0" expanded="true" />
-            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
-            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-            <element signature="e#13882#13893#0" expanded="true" />
-            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-            <element signature="method#render#0;class#Move#0" expanded="false" />
-            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3390">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#347#0" expanded="true" />
-            <element signature="e#404#412#0" expanded="true" />
-            <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#855#862#0" expanded="true" />
-            <element signature="e#995#1015#0" expanded="true" />
-            <element signature="e#1083#1103#0" expanded="true" />
-            <element signature="e#1566#1577#0" expanded="true" />
-            <element signature="e#1646#1666#0" expanded="true" />
-            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="method#collision#0;class#Move#0" expanded="false" />
-            <element signature="e#4986#4995#0" expanded="true" />
-            <element signature="e#5492#5501#0" expanded="true" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#7514#7523#0" expanded="true" />
-            <element signature="e#7589#7598#0" expanded="true" />
-            <element signature="e#8095#8104#0" expanded="true" />
-            <element signature="e#8433#8442#0" expanded="true" />
-            <element signature="e#8749#8758#0" expanded="true" />
-            <element signature="e#8825#8834#0" expanded="true" />
-            <element signature="e#9341#9350#0" expanded="true" />
-            <element signature="e#9687#9696#0" expanded="true" />
-            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
-            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-            <element signature="e#13882#13893#0" expanded="true" />
-            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-            <element signature="method#render#0;class#Move#0" expanded="false" />
-            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="615">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="3510">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="4470">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#347#0" expanded="true" />
-            <element signature="e#404#412#0" expanded="true" />
-            <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#855#862#0" expanded="true" />
-            <element signature="e#995#1015#0" expanded="true" />
-            <element signature="e#1083#1103#0" expanded="true" />
-            <element signature="e#1566#1577#0" expanded="true" />
-            <element signature="e#1646#1666#0" expanded="true" />
-            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="method#collision#0;class#Move#0" expanded="false" />
-            <element signature="e#4986#4995#0" expanded="true" />
-            <element signature="e#5492#5501#0" expanded="true" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#7514#7523#0" expanded="true" />
-            <element signature="e#7589#7598#0" expanded="true" />
-            <element signature="e#8095#8104#0" expanded="true" />
-            <element signature="e#8433#8442#0" expanded="true" />
-            <element signature="e#8749#8758#0" expanded="true" />
-            <element signature="e#8825#8834#0" expanded="true" />
-            <element signature="e#9341#9350#0" expanded="true" />
-            <element signature="e#9687#9696#0" expanded="true" />
-            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
-            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-            <element signature="e#13882#13893#0" expanded="true" />
-            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-            <element signature="method#render#0;class#Move#0" expanded="false" />
-            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="3465">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="26" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="960">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="23" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1155">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="720">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/words">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-68.8058" vertical-offset="30825" max-vertical-offset="3538380" />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="633" column="0" selection-start="23176" selection-end="23176" vertical-scroll-proportion="1.3448275" vertical-offset="8136" max-vertical-offset="17325">
+        <state line="62" column="0" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/word_test.java">
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="98" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="435">
+        <state line="47" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="960">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/words">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49798" column="0" selection-start="516357" selection-end="516362" vertical-scroll-proportion="-5.1538463" vertical-offset="746836" max-vertical-offset="3538380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="930">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="25" selection-start="5643" selection-end="5652" vertical-scroll-proportion="-5.1923075" vertical-offset="2490" max-vertical-offset="2940">
+        <state line="175" column="25" selection-start="5643" selection-end="5652" vertical-scroll-proportion="0.0" vertical-offset="2490" max-vertical-offset="2940">
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#972#973#0" expanded="true" />
             <element signature="e#1008#1009#0" expanded="true" />
             <element signature="e#1066#1067#0" expanded="true" />
@@ -1126,28 +567,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1942" selection-end="1942" vertical-scroll-proportion="-5.1923075" vertical-offset="795" max-vertical-offset="1575">
+        <state line="18" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="960">
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="930">
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1163,27 +590,584 @@
             <element signature="e#855#862#0" expanded="true" />
             <element signature="e#995#1015#0" expanded="true" />
             <element signature="e#1083#1103#0" expanded="true" />
-            <element signature="e#1566#1577#0" expanded="true" />
-            <element signature="e#1646#1666#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="method#collision#0;class#Move#0" expanded="false" />
-            <element signature="e#4986#4995#0" expanded="true" />
-            <element signature="e#5492#5501#0" expanded="true" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
             <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#7514#7523#0" expanded="true" />
-            <element signature="e#7589#7598#0" expanded="true" />
-            <element signature="e#8095#8104#0" expanded="true" />
-            <element signature="e#8433#8442#0" expanded="true" />
-            <element signature="e#8749#8758#0" expanded="true" />
-            <element signature="e#8825#8834#0" expanded="true" />
-            <element signature="e#9341#9350#0" expanded="true" />
-            <element signature="e#9687#9696#0" expanded="true" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
-            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#detectWords#0;class#Move#0" expanded="false" />
-            <element signature="e#13882#13893#0" expanded="true" />
+            <element signature="e#17654#17665#0" expanded="true" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
-            <element signature="method#render#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/word_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49798" column="0" selection-start="516357" selection-end="516362" vertical-scroll-proportion="0.0" vertical-offset="746836" max-vertical-offset="3538380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="675">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="44" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="3855">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="960">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="37" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="5040">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#347#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#650#670#0" expanded="true" />
+            <element signature="e#855#862#0" expanded="true" />
+            <element signature="e#995#1015#0" expanded="true" />
+            <element signature="e#1083#1103#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#17654#17665#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3390">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#347#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#650#670#0" expanded="true" />
+            <element signature="e#855#862#0" expanded="true" />
+            <element signature="e#995#1015#0" expanded="true" />
+            <element signature="e#1083#1103#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#17654#17665#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="615">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="3390">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="4470">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#347#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#650#670#0" expanded="true" />
+            <element signature="e#855#862#0" expanded="true" />
+            <element signature="e#995#1015#0" expanded="true" />
+            <element signature="e#1083#1103#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#17654#17665#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="615">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="44" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="3510">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="960">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="4470">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#347#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#650#670#0" expanded="true" />
+            <element signature="e#855#862#0" expanded="true" />
+            <element signature="e#995#1015#0" expanded="true" />
+            <element signature="e#1083#1103#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#17654#17665#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
+            <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="22" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="3465">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="26" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="960">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1155">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="720">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/words">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-68.8058" vertical-offset="30825" max-vertical-offset="3538380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49798" column="0" selection-start="516357" selection-end="516362" vertical-scroll-proportion="0.19676946" vertical-offset="746836" max-vertical-offset="3538380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/word_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="5885" selection-end="5885" vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="2865">
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="900">
+          <folding>
+            <element signature="e#852#853#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="439" column="0" selection-start="15840" selection-end="15840" vertical-scroll-proportion="0.0" vertical-offset="6110" max-vertical-offset="17325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="900">
+          <folding>
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2511" selection-end="2511" vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="0" selection-start="7349" selection-end="7349" vertical-scroll-proportion="-1.2051282" vertical-offset="3333" max-vertical-offset="5835">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#347#0" expanded="true" />
+            <element signature="e#404#412#0" expanded="true" />
+            <element signature="e#650#670#0" expanded="true" />
+            <element signature="e#855#862#0" expanded="true" />
+            <element signature="e#995#1015#0" expanded="true" />
+            <element signature="e#1083#1103#0" expanded="true" />
+            <element signature="e#1167#1175#0" expanded="true" />
+            <element signature="e#1638#1649#0" expanded="true" />
+            <element signature="e#1718#1738#0" expanded="true" />
+            <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
+            <element signature="e#5093#5102#0" expanded="true" />
+            <element signature="e#5599#5608#0" expanded="true" />
+            <element signature="e#7276#7296#0" expanded="true" />
+            <element signature="e#7779#7790#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#11286#11295#0" expanded="true" />
+            <element signature="e#11361#11370#0" expanded="true" />
+            <element signature="e#11867#11876#0" expanded="true" />
+            <element signature="e#12205#12214#0" expanded="true" />
+            <element signature="e#12521#12530#0" expanded="true" />
+            <element signature="e#12597#12606#0" expanded="true" />
+            <element signature="e#13113#13122#0" expanded="true" />
+            <element signature="e#13459#13468#0" expanded="true" />
+            <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#detectWords#0;class#Move#0" expanded="false" />
+            <element signature="e#17654#17665#0" expanded="true" />
+            <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
         </state>

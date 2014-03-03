@@ -25,6 +25,7 @@ public class Move {
     // Added to store space in move to track collision and neighbors
     ArrayList<ArrayList<Integer>> moveSpaces = new ArrayList<ArrayList<Integer>>();
     ArrayList<ArrayList<Integer>> neighborSpaces = new ArrayList<ArrayList<Integer>>();
+    private ArrayList<String> collisionWords = new ArrayList<String>();
 
     public Move(String word, int row, int col, String direction, Board board){
         this.word = word;
@@ -124,6 +125,7 @@ public class Move {
         // get the list of neighbor coordinates
         //
         if (moveMatchesHand() && collision()) {
+//            getCollisionWords();
             return true;
         } else {
             return false;
@@ -203,6 +205,87 @@ public class Move {
         } else {
             return false;
         }
+    }
+
+    public void getCollisionWords() {
+        ArrayList<ArrayList<Integer>> spacesWithTiles = new ArrayList<ArrayList<Integer>>();
+        // checks for characters on board spaces
+        for (int i = 0; i < this.neighborSpaces.size(); i++) {
+            int spaceRow = this.neighborSpaces.get(i).get(0);
+            int spaceCol = this.neighborSpaces.get(i).get(1);
+            // if the space has a letter and is not empty
+            if (this.spaces[spaceRow][spaceCol].getLetter() != '\u0000') {
+                // characters of word formed
+                ArrayList<Character> colWordChars = new ArrayList<Character>();
+//                spacesWithTiles.add(this.neighborSpaces.get(i));
+                // if tile is above or below word
+                // checks if row column is different th
+                int neighborRow = this.neighborSpaces.get(i).get(0);
+                int neighborCol = this.neighborSpaces.get(i).get(1);
+                // add letter value of neighbor to colWordsChars
+                colWordChars.add(this.spaces[neighborRow][neighborCol].getLetter());
+                // do if word is to the left or right of neighbor
+                if (!isNeighborVertical(neighborCol)) {
+                    // build left & right words
+                    // build to the left
+                    int leftCol = neighborCol - 1;
+                    int rightCol = neighborCol + 1;
+                    while (this.spaces[neighborRow][leftCol].getLetter() != '\u0000') {
+                        colWordChars.add(0, this.spaces[neighborRow][leftCol].getLetter());
+                        leftCol--;
+                    }
+                    // build to the right
+                    while (this.spaces[neighborRow][rightCol].getLetter() != '\u0000') {
+                        colWordChars.add(this.spaces[neighborRow][rightCol].getLetter());
+                        rightCol++;
+                    }
+                    String collisionWord = characterListToString(colWordChars);
+                    this.collisionWords.add(collisionWord);
+
+
+
+
+                } else {
+                    // build top and bottom words
+                    // build to the top
+                    int topRow = neighborRow - 1;
+                    int bottomRow = neighborRow + 1;
+                    // build to the top
+                    while (this.spaces[topRow][neighborCol].getLetter() != '\u0000') {
+                        colWordChars.add(0, this.spaces[topRow][neighborCol].getLetter());
+                        topRow--;
+                    }
+                    // build to the bottom
+                    while (this.spaces[bottomRow][neighborCol].getLetter() != '\u0000') {
+                        colWordChars.add(this.spaces[bottomRow][neighborCol].getLetter());
+                        bottomRow++;
+                    }
+                    String collisionWord = characterListToString(colWordChars);
+                    this.collisionWords.add(collisionWord);
+                }
+            }
+        }
+
+    }
+
+    // helper to detect neighbor relativity
+    public boolean isNeighborVertical(int neighborCol) {
+        for (int i = 0; i < this.moveSpaces.size(); i++) {
+            if (this.moveSpaces.get(i).get(1).equals(neighborCol)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // helper method to turn character lists to stings
+    public String characterListToString(ArrayList<Character> charList) {
+        StringBuilder charWord = new StringBuilder(charList.size());
+        for(Character ch: charList)
+        {
+            charWord.append(ch);
+        }
+        return charWord.toString();
     }
 
     // must be run after collision(), where moveSpace is populated

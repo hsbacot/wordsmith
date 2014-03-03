@@ -69,11 +69,16 @@ public class Game {
                 newMove.render();
                 newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
+                System.out.println("counter " + counter);
+                if (counter > 2) {
+                    newMove.getCollisionWords();
+                }
             }
             testBoard.showScore();
             testBoard.nextPlayer();
 
             // game ends after 10 turns currently
+
             counter++;
         }
     }
