@@ -52,11 +52,13 @@ public class Game {
             // score words
             if (newMove.legalMove()){
                 Board oldBoard = newMove.getBoard();
+                int oldScore = testBoard.currentPlayer.getScore();
                 int score = newMove.placeWord();
                 // collisions must be ran after word is placed
                 // check validity of collisions
                 if (!newMove.isCollisionValid()) {
                     newMove.setBoard(oldBoard);
+                    score = oldScore;
                 }
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
