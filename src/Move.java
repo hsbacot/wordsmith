@@ -508,7 +508,26 @@ public class Move {
 
     //print whole board
     public void render() {
+
+        System.out.print("   ");
+
+        for(int col = 1; col < 16; col++){
+            if((col)< 10) {
+                System.out.print("  " + col + " ");
+            }
+            else {
+                System.out.print(" " + col + " ");
+            }
+        }
+        System.out.print("\n");
+
         for(int row = 0; row < 15; row++) {
+            if((row+1)< 10) {
+                System.out.print("  " + (row+1) + " ");
+            }
+            else {
+                System.out.print(" " + (row+1) + " ");
+            }
             for(int col = 0; col < 15; col++) {
                 System.out.print(" ");
                 System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
