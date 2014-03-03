@@ -60,6 +60,17 @@ public class Move {
         }
 
 //        ArrayList<Character> charPlayed = new ArrayList<Character>();
+//
+//        for  (int i = 0; i < word.length(); i++) {
+//            char letter = wordAR.get(i);
+//            if (amountInArrayList(letter, wordAR) > amountInArrayList(letter, this.board.currentPlayer.getHand())) {
+//                System.out.println("ERROR: FALSE ON MATCH");
+//                return false;
+//            }
+//            else {
+//                charPlayed.add(wordAR.get(i));
+//            }
+//        }
 
 
 
@@ -150,6 +161,13 @@ public class Move {
         if (!hasNeighbor()) {
             verdict = false;
         }
+
+
+
+
+
+
+
         int secondaryPoints = 0;
         // check the validity of each secondary word
         for (int i = 0; i < this.collisionWords.size(); i++) {
@@ -217,9 +235,9 @@ public class Move {
                 verdict = true;
                 this.collision = true;
                 // set object to null but don't remove to keep indexing
-                // in row means collision
-                this.moveSpaces.get(i).set(0, 20);
-            } else if (this.board.currentPlayer.getHand().contains(letterInWord)) {
+                // in add third field set equal to 20 is collision
+                this.moveSpaces.get(i).add(20);
+            } else if (this.board.currentPlayer.getHand().contains(letterInWord) && letterAtSpace == '\u0000') {
                 System.out.println("Valid play, letter needed is in player hand");
                 verdict = true;
             } else {
@@ -336,7 +354,7 @@ public class Move {
         for (int i = 0; i < this.moveSpaces.size(); i++) {
             // get row and column of each moveSpaces element
             // if element is not null
-            if (this.moveSpaces.get(i).get(0).equals(20)) {
+            if (this.moveSpaces.get(i).size() > 2) {
                 break;
             }
             int spaceRow = this.moveSpaces.get(i).get(0);

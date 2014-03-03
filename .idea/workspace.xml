@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="152" class="Move" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="239" class="Move" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -81,11 +81,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="37" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.49222797" vertical-offset="665" max-vertical-offset="1515">
-              <folding />
+            <state line="57" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1815">
+              <folding>
+                <element signature="e#1656#1663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +95,7 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="900">
+            <state line="47" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="900">
               <folding>
                 <element signature="e#347#348#0" expanded="true" />
                 <element signature="e#375#376#0" expanded="true" />
@@ -101,7 +103,6 @@
                 <element signature="e#659#660#0" expanded="true" />
                 <element signature="e#785#786#0" expanded="true" />
                 <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
                 <element signature="e#945#946#0" expanded="true" />
               </folding>
             </state>
@@ -121,37 +122,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Space.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <file leaf-file-name="words" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/words">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="900">
-              <folding>
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-              </folding>
+            <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Move.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Move.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="23" selection-start="5340" selection-end="5340" vertical-scroll-proportion="-11.769231" vertical-offset="1869" max-vertical-offset="4950">
+            <state line="358" column="13" selection-start="13285" selection-end="13285" vertical-scroll-proportion="0.28818443" vertical-offset="4535" max-vertical-offset="6150">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#339#347#0" expanded="true" />
                 <element signature="e#404#412#0" expanded="true" />
                 <element signature="e#650#670#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
                 <element signature="e#989#996#0" expanded="true" />
                 <element signature="e#1129#1149#0" expanded="true" />
                 <element signature="e#1217#1237#0" expanded="true" />
@@ -160,46 +148,27 @@
                 <element signature="e#1900#1911#0" expanded="true" />
                 <element signature="e#1980#2000#0" expanded="true" />
                 <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-                <element signature="e#6085#6094#0" expanded="true" />
-                <element signature="e#6591#6600#0" expanded="true" />
-                <element signature="e#8876#8887#0" expanded="true" />
+                <element signature="e#6519#6528#0" expanded="true" />
+                <element signature="e#7025#7034#0" expanded="true" />
+                <element signature="e#9361#9372#0" expanded="true" />
                 <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
                 <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
                 <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-                <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-                <element signature="e#12624#12672#0" expanded="false" />
-                <element signature="e#13035#13044#0" expanded="true" />
-                <element signature="e#13110#13119#0" expanded="true" />
-                <element signature="e#13616#13625#0" expanded="true" />
-                <element signature="e#13954#13963#0" expanded="true" />
-                <element signature="e#14270#14279#0" expanded="true" />
-                <element signature="e#14346#14355#0" expanded="true" />
-                <element signature="e#14862#14871#0" expanded="true" />
-                <element signature="e#15208#15217#0" expanded="true" />
+                <element signature="e#13109#13157#0" expanded="false" />
+                <element signature="e#13513#13522#0" expanded="true" />
+                <element signature="e#13588#13597#0" expanded="true" />
+                <element signature="e#14094#14103#0" expanded="true" />
+                <element signature="e#14432#14441#0" expanded="true" />
+                <element signature="e#14748#14757#0" expanded="true" />
+                <element signature="e#14824#14833#0" expanded="true" />
+                <element signature="e#15340#15349#0" expanded="true" />
+                <element signature="e#15686#15695#0" expanded="true" />
                 <element signature="method#placeWord#0;class#Move#0" expanded="false" />
                 <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
                 <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
                 <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
                 <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word_test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/word_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="words" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/words">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -225,7 +194,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
+    <option name="x" value="50" />
     <option name="y" value="22" />
     <option name="width" value="1206" />
     <option name="height" value="778" />
@@ -272,6 +241,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Scrabble" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scrabble" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scrabble" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,7 +481,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="22" width="1206" height="778" extended-state="0" />
+    <frame x="50" y="22" width="1206" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -550,7 +533,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="0" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1575">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -564,7 +549,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -589,7 +573,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -605,10 +588,6 @@
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -617,22 +596,21 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
@@ -659,7 +637,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="0" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1335">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,7 +653,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -698,7 +677,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -714,10 +692,6 @@
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -726,22 +700,21 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
@@ -754,7 +727,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -768,7 +743,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -793,7 +767,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -809,10 +782,6 @@
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -821,22 +790,21 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
@@ -849,7 +817,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -863,7 +833,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -888,7 +857,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -904,10 +872,6 @@
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -916,22 +880,21 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
@@ -944,7 +907,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1125">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -958,7 +923,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -983,7 +947,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -999,10 +962,6 @@
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -1011,22 +970,21 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
@@ -1039,7 +997,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="22" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="945">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,7 +1013,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -1078,7 +1037,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -1089,7 +1047,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,7 +1063,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -1128,7 +1087,6 @@
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#657#658#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
@@ -1139,7 +1097,9 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="17" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
-          <folding />
+          <folding>
+            <element signature="e#1656#1663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,7 +1113,6 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
@@ -1182,6 +1141,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/words">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/word_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
@@ -1189,10 +1155,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/words">
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
-          <folding />
+        <state line="28" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.20704846" vertical-offset="219" max-vertical-offset="900">
+          <folding>
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1209,7 +1183,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="900">
+        <state line="47" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="900">
           <folding>
             <element signature="e#347#348#0" expanded="true" />
             <element signature="e#375#376#0" expanded="true" />
@@ -1217,40 +1191,28 @@
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
             <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="900">
+        <state line="57" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1815">
           <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#1656#1663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Move.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="23" selection-start="5340" selection-end="5340" vertical-scroll-proportion="-11.769231" vertical-offset="1869" max-vertical-offset="4950">
+        <state line="358" column="13" selection-start="13285" selection-end="13285" vertical-scroll-proportion="0.28818443" vertical-offset="4535" max-vertical-offset="6150">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#339#347#0" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
             <element signature="e#650#670#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
             <element signature="e#989#996#0" expanded="true" />
             <element signature="e#1129#1149#0" expanded="true" />
             <element signature="e#1217#1237#0" expanded="true" />
@@ -1259,35 +1221,27 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#6085#6094#0" expanded="true" />
-            <element signature="e#6591#6600#0" expanded="true" />
-            <element signature="e#8876#8887#0" expanded="true" />
+            <element signature="e#6519#6528#0" expanded="true" />
+            <element signature="e#7025#7034#0" expanded="true" />
+            <element signature="e#9361#9372#0" expanded="true" />
             <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
-            <element signature="e#12624#12672#0" expanded="false" />
-            <element signature="e#13035#13044#0" expanded="true" />
-            <element signature="e#13110#13119#0" expanded="true" />
-            <element signature="e#13616#13625#0" expanded="true" />
-            <element signature="e#13954#13963#0" expanded="true" />
-            <element signature="e#14270#14279#0" expanded="true" />
-            <element signature="e#14346#14355#0" expanded="true" />
-            <element signature="e#14862#14871#0" expanded="true" />
-            <element signature="e#15208#15217#0" expanded="true" />
+            <element signature="e#13109#13157#0" expanded="false" />
+            <element signature="e#13513#13522#0" expanded="true" />
+            <element signature="e#13588#13597#0" expanded="true" />
+            <element signature="e#14094#14103#0" expanded="true" />
+            <element signature="e#14432#14441#0" expanded="true" />
+            <element signature="e#14748#14757#0" expanded="true" />
+            <element signature="e#14824#14833#0" expanded="true" />
+            <element signature="e#15340#15349#0" expanded="true" />
+            <element signature="e#15686#15695#0" expanded="true" />
             <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="37" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.49222797" vertical-offset="665" max-vertical-offset="1515">
-          <folding />
         </state>
       </provider>
     </entry>
