@@ -20,6 +20,8 @@ public class Move {
     private Space[][] spaces;
     private HashMap<Character, Integer> scoreGuide = new HashMap<Character, Integer>();
 
+
+
     public Board getBoard() {
         return board;
     }
@@ -138,16 +140,12 @@ public class Move {
     }
 
     public boolean legalMove() {
-        // does the user have the tiles needed to play the word?
-        // iterate through each space and check hand for letter
-        // if the letter is in hand, keep going
-        // if not check the coordinate on the board for the letter
-        // in the coordinate on the board has the letter needed, keep going
-        // else return false
-        // get the list of neighbor coordinates
-        //
+        if (this.direction.equals("down") && this.row + this.word.length() > 15 ) {
+            return false;
+        } else if (!this.direction.equals("down") && this.col + this.word.length() > 15 ) {
+            return false;
+        }
         if (moveMatchesHand() && collision()) {
-
             return true;
         } else {
             return false;
@@ -366,26 +364,34 @@ public class Move {
                 // position to the left
                 leftCoords.add(spaceRow);
                 leftCoords.add(spaceCol- 1);
-                this.neighborSpaces.add(leftCoords);
+                if (spaceCol - 1 >= 0) {
+                    this.neighborSpaces.add(leftCoords);
+                }
 
                 // position to the right
                 rightCoords.add(spaceRow);
                 rightCoords.add(spaceCol + 1);
-                this.neighborSpaces.add(rightCoords);
+                if (spaceCol + 1 < 15) {
+                    this.neighborSpaces.add(rightCoords);
+                }
 
                 // position top
                 if (i == 0) {
                     ArrayList<Integer> topCoords = new ArrayList<Integer>();
                     topCoords.add(spaceRow - 1);
                     topCoords.add(spaceCol);
-                    this.neighborSpaces.add(topCoords);
+                    if (spaceRow -1 >= 0) {
+                        this.neighborSpaces.add(topCoords);
+                    }
                 }
                 // position bottom
                 if (i == this.moveSpaces.size() - 1) {
                     ArrayList<Integer> bottomCoords = new ArrayList<Integer>();
                     bottomCoords.add(spaceRow + 1);
                     bottomCoords.add(spaceCol);
-                    this.neighborSpaces.add(bottomCoords);
+                    if (spaceRow + 1 < 15) {
+                        this.neighborSpaces.add(bottomCoords);
+                    }
                 }
             } else {
                 // if the direction is right
@@ -394,26 +400,34 @@ public class Move {
                 // position to the top
                 topCoords.add(spaceRow - 1);
                 topCoords.add(spaceCol);
-                this.neighborSpaces.add(topCoords);
+                if (spaceRow -1 >= 0) {
+                    this.neighborSpaces.add(topCoords);
+                }
 
                 // position to the bottom
                 bottomCoords.add(spaceRow + 1);
                 bottomCoords.add(spaceCol);
-                this.neighborSpaces.add(bottomCoords);
+                if (spaceRow + 1 < 15) {
+                    this.neighborSpaces.add(bottomCoords);
+                }
 
                 // position to the left
                 if (i == 0) {
                     ArrayList<Integer> leftCoords = new ArrayList<Integer>();
                     leftCoords.add(spaceRow);
                     leftCoords.add(spaceCol - 1);
-                    this.neighborSpaces.add(leftCoords);
+                    if (spaceCol - 1 >= 0) {
+                        this.neighborSpaces.add(leftCoords);
+                    }
                 }
                 // position to the right
                 if (i == this.moveSpaces.size() - 1) {
                     ArrayList<Integer> rightCoords = new ArrayList<Integer>();
                     rightCoords.add(spaceRow);
                     rightCoords.add(spaceCol + 1);
-                    this.neighborSpaces.add(rightCoords);
+                    if (spaceCol + 1 < 15) {
+                        this.neighborSpaces.add(rightCoords);
+                    }
                 }
             }
         }
@@ -457,7 +471,7 @@ public class Move {
             System.out.println("word length greater than 1: " + (this.word.length() > 1));
             System.out.println("word.length" + this.word.length());
 
-            if ((this.word.length() + this.col) < 15 && checkWord(this.word) && this.word.length() > 1) {
+            if ((this.word.length() + this.col) <= 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
@@ -524,13 +538,33 @@ public class Move {
 
     //print whole board
     public void render() {
-        for(int row = 0; row < 15; row++) {
-            for(int col = 0; col < 15; col++) {
-                System.out.print(" ");
-                System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
-                System.out.print(" ");
+
+        System.out.print("    ");
+
+
+        for(int col = 1; col < 16; col++){
+            if((col)< 10) {
+                System.out.print("__" + col + "_");
             }
-            System.out.println();
+            else {
+                System.out.print("_" + col + "_");
+            }
+        }
+        System.out.print("\n");
+
+        for(int row = 0; row < 15; row++) {
+            if((row+1)< 10) {
+                System.out.print("  " + (row+1) + " ");
+            }
+            else {
+                System.out.print(" " + (row+1) + " ");
+            }
+            for(int col = 0; col < 15; col++) {
+                System.out.print("|");
+                System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
+                System.out.print("_");
+            }
+            System.out.println("|");
         }
     }
 

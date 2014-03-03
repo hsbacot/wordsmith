@@ -39,10 +39,10 @@ public class Game {
 
 
             System.out.println("What row would you like to play in?");
-            row = scanner.nextInt();
+            row = (scanner.nextInt()-1);
 
             System.out.println("What column would you like to play in?");
-            col = scanner.nextInt();
+            col = (scanner.nextInt()-1);
 
             System.out.println("In what direction would you like to play? (down/right)");
             direction = scanner.next();
@@ -82,7 +82,6 @@ public class Game {
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
                 //newMove.detectWords();
-
                 newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
                 System.out.println("counter " + counter);

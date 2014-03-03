@@ -26,11 +26,23 @@ public class Board {
         setLetterBag();
 //        setScoreGuide();
         Collections.shuffle(this.letterBag);
+        greeting();
     }
 
     public boolean tilesLeft() {
         return !letterBag.isEmpty();
     }
+
+    public void greeting() {
+        System.out.println("\n\n\n\n\n\n" + "                                        \n" +
+                " _ _ _           _           _ _   _   \n" +
+                "| | | |___ ___ _| |___ _____|_| |_| |_ \n" +
+                "| | | | . |  _| . |_ -|     | |  _|   |\n" +
+                "|_____|___|_| |___|___|_|_|_|_|_| |_|_|\n" +
+                "                                        \n\n");
+
+    }
+
 
     public Player getCurrentPlayer() {
         return currentPlayer;
