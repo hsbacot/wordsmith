@@ -66,14 +66,33 @@ public class Game {
 
             // score words
             if (newMove.legalMove()){
-                Board oldBoard = newMove.getBoard();
+                ArrayList<Space> oldSpaces = new ArrayList<Space>();
+                for (int i = 0; i < newMove.moveSpaces.size(); i++) {
+                    int spaceRow = newMove.moveSpaces.get(i).get(0);
+                    int spaceCol = newMove.moveSpaces.get(i).get(1);
+                    Space holder = newMove.board.spaces[spaceRow][spaceCol];
+                    Space space = new Space();
+                    space.setLetter(holder.getLetter());
+                    space.setLetterMultiplier(holder.getLetterMultiplier());
+                    space.setWordMultiplier(holder.getWordMultiplier());
+                    oldSpaces.add(space);
+                }
                 int oldScore = testBoard.currentPlayer.getScore();
                 int score = newMove.placeWord();
                 // collisions must be ran after word is placed
                 // check validity of collisions
                 if (!newMove.isCollisionValid()) {
-                    newMove.setBoard(oldBoard);
-                    score = oldScore;
+                    // reset space values
+                    for (int i = 0; i < newMove.moveSpaces.size(); i++) {
+                        int spaceRow = newMove.moveSpaces.get(i).get(0);
+                        int spaceCol = newMove.moveSpaces.get(i).get(1);
+                        Space space = newMove.board.spaces[spaceRow][spaceCol];
+                        Space oldSpace = oldSpaces.get(i);
+                        space.setLetter(oldSpace.getLetter());
+                        space.setLetterMultiplier(oldSpace.getLetterMultiplier());
+                        space.setWordMultiplier(oldSpace.getWordMultiplier());
+                    }
+                    score = 0;
                 }
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);

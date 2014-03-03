@@ -62,6 +62,17 @@ public class Move {
         }
 
 //        ArrayList<Character> charPlayed = new ArrayList<Character>();
+//
+//        for  (int i = 0; i < word.length(); i++) {
+//            char letter = wordAR.get(i);
+//            if (amountInArrayList(letter, wordAR) > amountInArrayList(letter, this.board.currentPlayer.getHand())) {
+//                System.out.println("ERROR: FALSE ON MATCH");
+//                return false;
+//            }
+//            else {
+//                charPlayed.add(wordAR.get(i));
+//            }
+//        }
 
 
 
@@ -129,16 +140,12 @@ public class Move {
     }
 
     public boolean legalMove() {
-        // does the user have the tiles needed to play the word?
-        // iterate through each space and check hand for letter
-        // if the letter is in hand, keep going
-        // if not check the coordinate on the board for the letter
-        // in the coordinate on the board has the letter needed, keep going
-        // else return false
-        // get the list of neighbor coordinates
-        //
+        if (this.direction.equals("down") && this.row + this.word.length() > 15 ) {
+            return false;
+        } else if (!this.direction.equals("down") && this.col + this.word.length() > 15 ) {
+            return false;
+        }
         if (moveMatchesHand() && collision()) {
-
             return true;
         } else {
             return false;
@@ -152,6 +159,13 @@ public class Move {
         if (!hasNeighbor()) {
             verdict = false;
         }
+
+
+
+
+
+
+
         int secondaryPoints = 0;
         // check the validity of each secondary word
         for (int i = 0; i < this.collisionWords.size(); i++) {
@@ -219,9 +233,9 @@ public class Move {
                 verdict = true;
                 this.collision = true;
                 // set object to null but don't remove to keep indexing
-                // in row means collision
-                this.moveSpaces.get(i).set(0, 20);
-            } else if (this.board.currentPlayer.getHand().contains(letterInWord)) {
+                // in add third field set equal to 20 is collision
+                this.moveSpaces.get(i).add(20);
+            } else if (this.board.currentPlayer.getHand().contains(letterInWord) && letterAtSpace == '\u0000') {
 //                System.out.println("Valid play, letter needed is in player hand");
                 verdict = true;
             } else {
@@ -338,7 +352,7 @@ public class Move {
         for (int i = 0; i < this.moveSpaces.size(); i++) {
             // get row and column of each moveSpaces element
             // if element is not null
-            if (this.moveSpaces.get(i).get(0).equals(20)) {
+            if (this.moveSpaces.get(i).size() > 2) {
                 break;
             }
             int spaceRow = this.moveSpaces.get(i).get(0);
@@ -350,26 +364,34 @@ public class Move {
                 // position to the left
                 leftCoords.add(spaceRow);
                 leftCoords.add(spaceCol- 1);
-                this.neighborSpaces.add(leftCoords);
+                if (spaceCol - 1 >= 0) {
+                    this.neighborSpaces.add(leftCoords);
+                }
 
                 // position to the right
                 rightCoords.add(spaceRow);
                 rightCoords.add(spaceCol + 1);
-                this.neighborSpaces.add(rightCoords);
+                if (spaceCol + 1 < 15) {
+                    this.neighborSpaces.add(rightCoords);
+                }
 
                 // position top
                 if (i == 0) {
                     ArrayList<Integer> topCoords = new ArrayList<Integer>();
                     topCoords.add(spaceRow - 1);
                     topCoords.add(spaceCol);
-                    this.neighborSpaces.add(topCoords);
+                    if (spaceRow -1 >= 0) {
+                        this.neighborSpaces.add(topCoords);
+                    }
                 }
                 // position bottom
                 if (i == this.moveSpaces.size() - 1) {
                     ArrayList<Integer> bottomCoords = new ArrayList<Integer>();
                     bottomCoords.add(spaceRow + 1);
                     bottomCoords.add(spaceCol);
-                    this.neighborSpaces.add(bottomCoords);
+                    if (spaceRow + 1 < 15) {
+                        this.neighborSpaces.add(bottomCoords);
+                    }
                 }
             } else {
                 // if the direction is right
@@ -378,26 +400,34 @@ public class Move {
                 // position to the top
                 topCoords.add(spaceRow - 1);
                 topCoords.add(spaceCol);
-                this.neighborSpaces.add(topCoords);
+                if (spaceRow -1 >= 0) {
+                    this.neighborSpaces.add(topCoords);
+                }
 
                 // position to the bottom
                 bottomCoords.add(spaceRow + 1);
                 bottomCoords.add(spaceCol);
-                this.neighborSpaces.add(bottomCoords);
+                if (spaceRow + 1 < 15) {
+                    this.neighborSpaces.add(bottomCoords);
+                }
 
                 // position to the left
                 if (i == 0) {
                     ArrayList<Integer> leftCoords = new ArrayList<Integer>();
                     leftCoords.add(spaceRow);
                     leftCoords.add(spaceCol - 1);
-                    this.neighborSpaces.add(leftCoords);
+                    if (spaceCol - 1 >= 0) {
+                        this.neighborSpaces.add(leftCoords);
+                    }
                 }
                 // position to the right
                 if (i == this.moveSpaces.size() - 1) {
                     ArrayList<Integer> rightCoords = new ArrayList<Integer>();
                     rightCoords.add(spaceRow);
                     rightCoords.add(spaceCol + 1);
-                    this.neighborSpaces.add(rightCoords);
+                    if (spaceCol + 1 < 15) {
+                        this.neighborSpaces.add(rightCoords);
+                    }
                 }
             }
         }
@@ -417,7 +447,7 @@ public class Move {
 //            System.out.println("word length greater than 1: " + (this.word.length() > 1));
 //            System.out.println("word.length" + this.word.length());
 
-            if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
+            if (this.word.length() + this.row <= 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
@@ -441,7 +471,7 @@ public class Move {
 //            System.out.println("word length greater than 1: " + (this.word.length() > 1));
 //            System.out.println("word.length" + this.word.length());
 
-            if ((this.word.length() + this.col) < 15 && checkWord(this.word) && this.word.length() > 1) {
+            if ((this.word.length() + this.col) <= 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
                 char[] letterArr = this.word.toCharArray();
                 for(int i = 0; i < this.word.length(); i++){
