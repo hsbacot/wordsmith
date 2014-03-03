@@ -23,7 +23,7 @@ public class Player {
         String tiles = "";
 
         for (int i = 0; i < this.hand.size(); i++) {
-            tiles = tiles + (this.hand.get(i).toString());
+            tiles = tiles + (this.hand.get(i).toString().toUpperCase()) + " ";
         }
         return tiles;
     }

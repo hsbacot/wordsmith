@@ -215,14 +215,14 @@ public class Move {
 
             Character letterAtSpace = this.spaces[spaceRow][spaceCol].getLetter();
             if (letterAtSpace == letterInWord) {
-                System.out.println("Valid play, letter needed is in space");
+//                System.out.println("Valid play, letter needed is in space");
                 verdict = true;
                 this.collision = true;
                 // set object to null but don't remove to keep indexing
                 // in row means collision
                 this.moveSpaces.get(i).set(0, 20);
             } else if (this.board.currentPlayer.getHand().contains(letterInWord)) {
-                System.out.println("Valid play, letter needed is in player hand");
+//                System.out.println("Valid play, letter needed is in player hand");
                 verdict = true;
             } else {
                 System.out.println("Invalid Play");
@@ -412,10 +412,10 @@ public class Move {
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
 
-            System.out.println("word length reach: " + this.word.length() + " " + this.row);
-            System.out.println("check word: " + checkWord(this.word));
-            System.out.println("word length greater than 1: " + (this.word.length() > 1));
-            System.out.println("word.length" + this.word.length());
+//            System.out.println("word length reach: " + this.word.length() + " " + this.row);
+//            System.out.println("check word: " + checkWord(this.word));
+//            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+//            System.out.println("word.length" + this.word.length());
 
             if (this.word.length() + this.row < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
@@ -436,10 +436,10 @@ public class Move {
             //rightward word check
             //This checks that downward words aren't off the board
             // Checks that all words are greater than 1 character in length
-            System.out.println("word length reach: " + this.word.length() + " " + this.col);
-            System.out.println("check word: " + checkWord(this.word));
-            System.out.println("word length greater than 1: " + (this.word.length() > 1));
-            System.out.println("word.length" + this.word.length());
+//            System.out.println("word length reach: " + this.word.length() + " " + this.col);
+//            System.out.println("check word: " + checkWord(this.word));
+//            System.out.println("word length greater than 1: " + (this.word.length() > 1));
+//            System.out.println("word.length" + this.word.length());
 
             if ((this.word.length() + this.col) < 15 && checkWord(this.word) && this.word.length() > 1) {
                 //paint
@@ -508,16 +508,19 @@ public class Move {
 
     //print whole board
     public void render() {
+        this.board.greeting();
 
-        System.out.print("    ");
+        System.out.println("Tiles: " + this.board.currentPlayer.tilePrint());
+
+        System.out.print("     ");
 
 
         for(int col = 1; col < 16; col++){
-            if((col)< 10) {
-                System.out.print("__" + col + "_");
+            if((col)< 9) {
+                System.out.print("_" + col + "_" );
             }
             else {
-                System.out.print("_" + col + "_");
+                System.out.print("_" + col );
             }
         }
         System.out.print("\n");
@@ -532,7 +535,7 @@ public class Move {
             for(int col = 0; col < 15; col++) {
                 System.out.print("|");
                 System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
-                System.out.print("_");
+//                System.out.print("_");
             }
             System.out.println("|");
         }
@@ -565,5 +568,13 @@ public class Move {
         this.scoreGuide.put('x', 8);
         this.scoreGuide.put('y', 4);
         this.scoreGuide.put('z', 10);
+    }
+
+    public void clearScreen() {
+        char c = '\n';
+        int length = 25;
+        char[] chars = new char[length];
+        Arrays.fill(chars, c);
+        System.out.print(String.valueOf(chars));
     }
 }
