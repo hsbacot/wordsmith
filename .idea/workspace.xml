@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="340" class="Move" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Move.java" line="151" class="Move" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -81,10 +81,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1485">
+            <state line="57" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="-0.51282054" vertical-offset="1010" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -141,7 +141,7 @@
       <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Move.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="407" column="0" selection-start="15402" selection-end="15402" vertical-scroll-proportion="-4.5" vertical-offset="5508" max-vertical-offset="6900">
+            <state line="151" column="0" selection-start="4743" selection-end="4743" vertical-scroll-proportion="-4.6538463" vertical-offset="1874" max-vertical-offset="4710">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#339#347#0" expanded="true" />
@@ -159,21 +159,26 @@
                 <element signature="e#1900#1911#0" expanded="true" />
                 <element signature="e#1980#2000#0" expanded="true" />
                 <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-                <element signature="e#5978#5987#0" expanded="true" />
-                <element signature="e#6484#6493#0" expanded="true" />
-                <element signature="e#8775#8786#0" expanded="true" />
+                <element signature="e#6044#6053#0" expanded="true" />
+                <element signature="e#6550#6559#0" expanded="true" />
+                <element signature="e#8835#8846#0" expanded="true" />
+                <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
                 <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
                 <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-                <element signature="e#12929#12938#0" expanded="true" />
-                <element signature="e#13004#13013#0" expanded="true" />
-                <element signature="e#13510#13519#0" expanded="true" />
-                <element signature="e#13848#13857#0" expanded="true" />
-                <element signature="e#14164#14173#0" expanded="true" />
-                <element signature="e#14240#14249#0" expanded="true" />
-                <element signature="e#14756#14765#0" expanded="true" />
-                <element signature="e#15102#15111#0" expanded="true" />
+                <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+                <element signature="e#12583#12631#0" expanded="false" />
+                <element signature="e#12994#13003#0" expanded="true" />
+                <element signature="e#13069#13078#0" expanded="true" />
+                <element signature="e#13575#13584#0" expanded="true" />
+                <element signature="e#13913#13922#0" expanded="true" />
+                <element signature="e#14229#14238#0" expanded="true" />
+                <element signature="e#14305#14314#0" expanded="true" />
+                <element signature="e#14821#14830#0" expanded="true" />
+                <element signature="e#15167#15176#0" expanded="true" />
+                <element signature="method#placeWord#0;class#Move#0" expanded="false" />
                 <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
                 <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+                <element signature="method#checkWord#0;class#Move#0" expanded="false" />
                 <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
                 <element signature="method#render#0;class#Move#0" expanded="false" />
                 <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -191,10 +196,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="words" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="words" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/words">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="0.33333334" vertical-offset="1365195" max-vertical-offset="3538380">
+            <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
               <folding />
             </state>
           </provider>
@@ -215,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/word_test.java" />
         <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/Space.java" />
-        <option value="$PROJECT_DIR$/src/Move.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/Move.java" />
       </list>
     </option>
   </component>
@@ -286,6 +291,7 @@
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -494,7 +500,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="22" width="1206" height="778" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -502,7 +508,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41043723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41043723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,7 +519,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26036483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41607898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41607898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -611,21 +617,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -716,21 +727,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -807,21 +823,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -898,21 +919,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -989,21 +1015,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -1155,21 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="900">
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="900">
@@ -1204,9 +1220,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/words">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="-4.6153846" vertical-offset="1365195" max-vertical-offset="3538380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="900">
+          <folding>
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Move.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="407" column="0" selection-start="15402" selection-end="15402" vertical-scroll-proportion="-4.5" vertical-offset="5508" max-vertical-offset="6900">
+        <state line="151" column="0" selection-start="4743" selection-end="4743" vertical-scroll-proportion="-4.6538463" vertical-offset="1874" max-vertical-offset="4710">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#339#347#0" expanded="true" />
@@ -1224,21 +1262,26 @@
             <element signature="e#1900#1911#0" expanded="true" />
             <element signature="e#1980#2000#0" expanded="true" />
             <element signature="method#neighborPositions#0;class#Move#0" expanded="false" />
-            <element signature="e#5978#5987#0" expanded="true" />
-            <element signature="e#6484#6493#0" expanded="true" />
-            <element signature="e#8775#8786#0" expanded="true" />
+            <element signature="e#6044#6053#0" expanded="true" />
+            <element signature="e#6550#6559#0" expanded="true" />
+            <element signature="e#8835#8846#0" expanded="true" />
+            <element signature="method#hasNeighbor#0;class#Move#0" expanded="false" />
             <element signature="method#isNeighborVertical#0;class#Move#0" expanded="false" />
             <element signature="method#characterListToString#0;class#Move#0" expanded="false" />
-            <element signature="e#12929#12938#0" expanded="true" />
-            <element signature="e#13004#13013#0" expanded="true" />
-            <element signature="e#13510#13519#0" expanded="true" />
-            <element signature="e#13848#13857#0" expanded="true" />
-            <element signature="e#14164#14173#0" expanded="true" />
-            <element signature="e#14240#14249#0" expanded="true" />
-            <element signature="e#14756#14765#0" expanded="true" />
-            <element signature="e#15102#15111#0" expanded="true" />
+            <element signature="method#addNeighborSpaces#0;class#Move#0" expanded="false" />
+            <element signature="e#12583#12631#0" expanded="false" />
+            <element signature="e#12994#13003#0" expanded="true" />
+            <element signature="e#13069#13078#0" expanded="true" />
+            <element signature="e#13575#13584#0" expanded="true" />
+            <element signature="e#13913#13922#0" expanded="true" />
+            <element signature="e#14229#14238#0" expanded="true" />
+            <element signature="e#14305#14314#0" expanded="true" />
+            <element signature="e#14821#14830#0" expanded="true" />
+            <element signature="e#15167#15176#0" expanded="true" />
+            <element signature="method#placeWord#0;class#Move#0" expanded="false" />
             <element signature="method#scoreSecondaryWord#0;class#Move#0" expanded="false" />
             <element signature="method#removeBonuses#0;class#Move#0" expanded="false" />
+            <element signature="method#checkWord#0;class#Move#0" expanded="false" />
             <element signature="method#populateDictionary#0;class#Move#0" expanded="false" />
             <element signature="method#render#0;class#Move#0" expanded="false" />
             <element signature="method#setScoreGuide#0;class#Move#0" expanded="false" />
@@ -1248,14 +1291,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/words">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91021" column="2" selection-start="946107" selection-end="946109" vertical-scroll-proportion="0.33333334" vertical-offset="1365195" max-vertical-offset="3538380">
+        <state line="57" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="-0.51282054" vertical-offset="1010" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>

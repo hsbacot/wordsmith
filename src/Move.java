@@ -146,6 +146,9 @@ public class Move {
     public boolean isCollisionValid() {
         getCollisionWords();
         // points adder
+        if (!hasNeighbor()) {
+            return false;
+        }
         int secondaryPoints = 0;
         // check the validity of each secondary word
         for (int i = 0; i < this.collisionWords.size(); i++) {
@@ -224,12 +227,6 @@ public class Move {
             }
         }
         // populates neighbor space list
-
-
-
-
-
-
         addNeighborSpaces();
 
         if (verdict){
@@ -248,7 +245,7 @@ public class Move {
             if (this.spaces[spaceRow][spaceCol].getLetter() != '\u0000') {
                 // characters of word formed
                 ArrayList<Character> colWordChars = new ArrayList<Character>();
-                spacesWithTiles.add(this.neighborSpaces.get(i));
+                this.spacesWithTiles.add(this.neighborSpaces.get(i));
                 // if tile is above or below word
                 // checks if row column is different th
                 int neighborRow = this.neighborSpaces.get(i).get(0);
