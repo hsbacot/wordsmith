@@ -22,29 +22,50 @@ public class Game {
         for (int i = 0; i < numOfPlayers; i++) {
             testBoard.giveTiles(testBoard.playerList.get(i));
         }
-
-        Move fakeMove = new Move("", 16, 16, "", testBoard);
-        fakeMove.render();
+//
+//        Move fakeMove = new Move("", 16, 16, "", testBoard);
+//        fakeMove.render();
 
 
         while (testBoard.tilesLeft()) {
 
             testBoard.giveTiles(testBoard.currentPlayer);
 
-            System.out.println("\n" + testBoard.currentPlayer.getName());
-            System.out.println(testBoard.currentPlayer.tilePrint());
+            for (int i = 0; i < testBoard.playerList.size(); i++) {
+                Player player = new Player();
+                player = testBoard.playerList.get(i);
+                System.out.print(player.getName());
+                if (player == testBoard.currentPlayer)  {
+                    System.out.print("(Your turn)");
+                }
+                System.out.print("  ");
+            }
+            System.out.print("\n");
 
-            System.out.println("What word would you like to play?");
+
+            System.out.println("Tiles: " + testBoard.currentPlayer.tilePrint());
+
+            Move displayMove = new Move("", 16, 16, "", testBoard);
+
+
+            displayMove.clearScreen();
+            displayMove.render();
+            System.out.print("word: ");
             word = scanner.next().toLowerCase();
 
-
-            System.out.println("What row would you like to play in?");
+            displayMove.clearScreen();
+            displayMove.render();
+            System.out.print("word: " + word + "   row: ");
             row = (scanner.nextInt()-1);
 
-            System.out.println("What column would you like to play in?");
+            displayMove.clearScreen();
+            displayMove.render();
+            System.out.print("word: " + word + "   row: " + row + "   col: ");
             col = (scanner.nextInt()-1);
 
-            System.out.println("In what direction would you like to play? (down/right)");
+            displayMove.clearScreen();
+            displayMove.render();
+            System.out.print("word: " + word + "   row: " + row + "   col: " + col + "   down or right: ");
             direction = scanner.next();
 
             Move newMove = new Move(word, row, col, direction, testBoard);
@@ -82,11 +103,12 @@ public class Game {
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
                 //newMove.detectWords();
+                newMove.clearScreen();
+                newMove.render();
                 newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
                 System.out.println("counter " + counter);
             }
-            newMove.render();
             testBoard.showScore();
             testBoard.nextPlayer();
 
