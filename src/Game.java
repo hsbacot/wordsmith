@@ -16,8 +16,6 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
 
-        //Player player1 = new Player(); //placeholder
-
         System.out.println("How many players?");
         numOfPlayers = scanner.nextInt();
         testBoard.createPlayers(numOfPlayers);
@@ -49,20 +47,17 @@ public class Game {
             System.out.println("In what direction would you like to play? (down/right)");
             direction = scanner.next();
 
-    //        testBoard.placeWord("he", 5,5, direction);
-    //        testBoard.placeWord(word, row, col, direction);
             Move newMove = new Move(word, row, col, direction, testBoard);
-
-            // make sure all board is valid, if not throw error
-//            newMove.detectWords();
-//            newMove.oldWords = newMove.words;
-
-            // detect if more words are created on play
 
             // score words
             if (newMove.legalMove()){
+                Board oldBoard = newMove.getBoard();
                 int score = newMove.placeWord();
-                //following deals with "player1" TODO add currentPlayer
+                // collisions must be ran after word is placed
+                // check validity of collisions
+                if (!newMove.isCollisionValid()) {
+                    newMove.setBoard(oldBoard);
+                }
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
                 //newMove.detectWords();
@@ -70,9 +65,6 @@ public class Game {
                 newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
                 System.out.println("counter " + counter);
-                if (counter > 2) {
-                    newMove.getCollisionWords();
-                }
             }
             testBoard.showScore();
             testBoard.nextPlayer();

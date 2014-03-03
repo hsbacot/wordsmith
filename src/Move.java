@@ -19,13 +19,24 @@ public class Move {
     private String direction;
     private Space[][] spaces;
     private HashMap<Character, Integer> scoreGuide = new HashMap<Character, Integer>();
-    private Board board;
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
+    public Board board;
     //added spacesPlayed to keep track of spaces whose bonuses should be set to 1 by removeBonuses
     private ArrayList<Space> spacesPlayed = new ArrayList<Space>();
     // Added to store space in move to track collision and neighbors
     ArrayList<ArrayList<Integer>> moveSpaces = new ArrayList<ArrayList<Integer>>();
     ArrayList<ArrayList<Integer>> neighborSpaces = new ArrayList<ArrayList<Integer>>();
     private ArrayList<String> collisionWords = new ArrayList<String>();
+    private boolean collision = false;
+    ArrayList<ArrayList<Integer>> spacesWithTiles = new ArrayList<ArrayList<Integer>>();
 
     public Move(String word, int row, int col, String direction, Board board){
         this.word = word;
@@ -125,11 +136,28 @@ public class Move {
         // get the list of neighbor coordinates
         //
         if (moveMatchesHand() && collision()) {
-//            getCollisionWords();
+
             return true;
         } else {
             return false;
         }
+    }
+
+    public boolean isCollisionValid() {
+        getCollisionWords();
+        // points adder
+        int secondaryPoints = 0;
+        // check the validity of each secondary word
+        for (int i = 0; i < this.collisionWords.size(); i++) {
+            // return false if all words aren't real
+            if (!checkWord(this.collisionWords.get(i))) {
+                return false;
+            }
+            secondaryPoints =+ scoreSecondaryWord(this.collisionWords.get(i));
+        }
+        // adds secondary points to players score
+        this.board.currentPlayer.setScore(this.board.currentPlayer.score + secondaryPoints);
+        return true;
     }
 
     // does the user have the tiles needed to play the word?
@@ -183,6 +211,10 @@ public class Move {
             if (letterAtSpace == letterInWord) {
                 System.out.println("Valid play, letter needed is in space");
                 verdict = true;
+                this.collision = true;
+                // set object to null but don't remove to keep indexing
+                // in row means collision
+                this.moveSpaces.get(i).set(0, 20);
             } else if (this.board.currentPlayer.getHand().contains(letterInWord)) {
                 System.out.println("Valid play, letter needed is in player hand");
                 verdict = true;
@@ -208,7 +240,6 @@ public class Move {
     }
 
     public void getCollisionWords() {
-        ArrayList<ArrayList<Integer>> spacesWithTiles = new ArrayList<ArrayList<Integer>>();
         // checks for characters on board spaces
         for (int i = 0; i < this.neighborSpaces.size(); i++) {
             int spaceRow = this.neighborSpaces.get(i).get(0);
@@ -217,7 +248,7 @@ public class Move {
             if (this.spaces[spaceRow][spaceCol].getLetter() != '\u0000') {
                 // characters of word formed
                 ArrayList<Character> colWordChars = new ArrayList<Character>();
-//                spacesWithTiles.add(this.neighborSpaces.get(i));
+                spacesWithTiles.add(this.neighborSpaces.get(i));
                 // if tile is above or below word
                 // checks if row column is different th
                 int neighborRow = this.neighborSpaces.get(i).get(0);
@@ -268,6 +299,20 @@ public class Move {
 
     }
 
+    public boolean hasNeighbor() {
+        boolean verdict = false;
+        if (this.spacesWithTiles.size() > 0 || this.collision) {
+            verdict = true;
+        }
+        if (this.direction.equals("down") && this.row <= 7 && (this.row + this.word.length() >= 7) && this.col == 7){
+            verdict = true;
+        } else if (!this.direction.equals("down") && this.col <= 7 && (this.col + this.word.length() >= 7) && this.row == 7) {
+            verdict = true;
+        }
+
+        return verdict;
+    }
+
     // helper to detect neighbor relativity
     public boolean isNeighborVertical(int neighborCol) {
         for (int i = 0; i < this.moveSpaces.size(); i++) {
@@ -292,6 +337,10 @@ public class Move {
     public void addNeighborSpaces() {
         for (int i = 0; i < this.moveSpaces.size(); i++) {
             // get row and column of each moveSpaces element
+            // if element is not null
+            if (this.moveSpaces.get(i).get(0).equals(20)) {
+                break;
+            }
             int spaceRow = this.moveSpaces.get(i).get(0);
             int spaceCol = this.moveSpaces.get(i).get(1);
 
@@ -414,23 +463,14 @@ public class Move {
         return wordVal;
     }
 
-    //TODO add scoring for byproduct words
-    //TODO remove multipliers on letters just played
-//    psuedo
-//    in place word and byproducts, add spaces played to an arraylist
- //   call with for loop set all multipliers on played spaces to 1
-
-    public int scoreWord(ArrayList<Space> word) {
+    public int scoreSecondaryWord(String word) {
         int score = 0;
-        int wordMultiplier = 1;
-        for(int i = 0; i < word.size(); i++) {
-            score += this.scoreGuide.get(word.get(i).getLetter()) * word.get(i).getLetterMultiplier();
-            wordMultiplier *= this.spaces[this.row + i][this.col].getWordMultiplier();
-
-            spacesPlayed.add(this.board.spaces[row][col+i]);
+        char[] wordCharArr = word.toCharArray();
+        for(int i = 0; i < word.length(); i++) {
+            score += this.scoreGuide.get(wordCharArr[i]);
         }
 
-        return score * wordMultiplier;
+        return score;
     }
 
     public void removeBonuses() {
@@ -448,57 +488,6 @@ public class Move {
         }
     }
 
-    public void detectWords() {
-//      String str = new String();
-
-        // USE STRING BUILDER
-
-        ArrayList<Character> wordDetected = new ArrayList<Character>();
-
-        for(int i = 0; i < 15; i++) {
-            for(int j = 0; j < 15; j++) {
-                char letter = this.board.spaces[i][j].getLetter();
-                if (letter != '\u0000') {
-                    wordDetected.add(letter);
-                }
-                else {
-                    String holder = new String();
-                    holder = wordDetected.toString();
-                    words.add(holder);
-                    wordDetected.clear();
-                    wordDetected.add('\u0000');
-                }
-                if (i == 15) {
-                    words.add(wordDetected.toString());
-                    wordDetected.clear();
-                    wordDetected.add('\u0000');
-                }
-            }
-        }
-
-        wordDetected.clear();
-        wordDetected.add('\u0000');
-
-        //Flipped i and j in order to check vertical words
-        for(int i = 0; i < 15; i++) {
-            for(int j = 0; j < 15; j++) {
-                char letter = this.board.spaces[j][i].getLetter();
-                if (letter != '\u0000') {
-                    wordDetected.add(letter);
-                }
-                else {
-                    words.add(word.toString());
-                    wordDetected.clear();
-                    wordDetected.add('\u0000');
-                }
-                if (j == 15) {
-                    words.add(word.toString());
-                    wordDetected.clear();
-                    wordDetected.add('\u0000');
-                }
-            }
-        }
-    }
 
     // Add words to dictionary hashset
     public void populateDictionary() {
