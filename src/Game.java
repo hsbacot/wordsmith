@@ -55,17 +55,17 @@ public class Game {
 
             displayMove.clearScreen();
             displayMove.render();
-            System.out.print("word: " + word + " row: ");
+            System.out.print("word: " + word + "   row: ");
             row = (scanner.nextInt()-1);
 
             displayMove.clearScreen();
             displayMove.render();
-            System.out.print("word: " + word + " row: " + row + " col: ");
+            System.out.print("word: " + word + "   row: " + row + "   col: ");
             col = (scanner.nextInt()-1);
 
             displayMove.clearScreen();
             displayMove.render();
-            System.out.print("word: " + word + " row: " + row + " col: " + col + " down or right: ");
+            System.out.print("word: " + word + "   row: " + row + "   col: " + col + "   down or right: ");
             direction = scanner.next();
 
             Move newMove = new Move(word, row, col, direction, testBoard);
