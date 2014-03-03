@@ -31,24 +31,18 @@ public class Game {
 
             testBoard.giveTiles(testBoard.currentPlayer);
 
-            for (int i = 0; i < testBoard.playerList.size(); i++) {
-                Player player = new Player();
-                player = testBoard.playerList.get(i);
-                System.out.print(player.getName());
-                if (player == testBoard.currentPlayer)  {
-                    System.out.print("(Your turn)");
-                }
-                System.out.print("  ");
-            }
+
+            Move displayMove = new Move("", 16, 16, "", testBoard);
+
+            displayMove.clearScreen();
+
+
             System.out.print("\n");
 
 
             System.out.println("Tiles: " + testBoard.currentPlayer.tilePrint());
 
-            Move displayMove = new Move("", 16, 16, "", testBoard);
 
-
-            displayMove.clearScreen();
             displayMove.render();
             System.out.print("word: ");
             word = scanner.next().toLowerCase();
@@ -90,7 +84,7 @@ public class Game {
                 // Also Need to update score
                 System.out.println("counter " + counter);
             }
-            testBoard.showScore();
+//            testBoard.showScore();
             testBoard.nextPlayer();
 
             // game ends after 10 turns currently

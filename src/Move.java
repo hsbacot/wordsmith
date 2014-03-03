@@ -510,6 +510,18 @@ public class Move {
     public void render() {
         this.board.greeting();
 
+        Board testBoard = this.board;
+
+        for (int i = 0; i < testBoard.playerList.size(); i++) {
+            Player player = new Player();
+            player = testBoard.playerList.get(i);
+            System.out.print(player.getName() + " " + player.getScore());
+            if (player == testBoard.currentPlayer)  {
+                System.out.print("(Your turn)");
+            }
+            System.out.print("  ");
+        }
+
         System.out.println("Tiles: " + this.board.currentPlayer.tilePrint());
 
         System.out.print("     ");
