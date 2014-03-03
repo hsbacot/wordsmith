@@ -20,6 +20,8 @@ public class Move {
     private Space[][] spaces;
     private HashMap<Character, Integer> scoreGuide = new HashMap<Character, Integer>();
 
+
+
     public Board getBoard() {
         return board;
     }
@@ -509,14 +511,15 @@ public class Move {
     //print whole board
     public void render() {
 
-        System.out.print("   ");
+        System.out.print("    ");
+
 
         for(int col = 1; col < 16; col++){
             if((col)< 10) {
-                System.out.print("  " + col + " ");
+                System.out.print("__" + col + "_");
             }
             else {
-                System.out.print(" " + col + " ");
+                System.out.print("_" + col + "_");
             }
         }
         System.out.print("\n");
@@ -529,11 +532,11 @@ public class Move {
                 System.out.print(" " + (row+1) + " ");
             }
             for(int col = 0; col < 15; col++) {
-                System.out.print(" ");
+                System.out.print("|");
                 System.out.print(this.spaces[row][col].getSpaceValue().toUpperCase());
-                System.out.print(" ");
+                System.out.print("_");
             }
-            System.out.println();
+            System.out.println("|");
         }
     }
 

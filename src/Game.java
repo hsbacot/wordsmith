@@ -61,6 +61,7 @@ public class Game {
                 Player player = testBoard.getCurrentPlayer();
                 player.addToScore(score);
                 //newMove.detectWords();
+
                 newMove.render();
                 newMove.depleteHand(); //only do if legal move and do after everything else.
                 // Also Need to update score
