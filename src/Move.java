@@ -146,20 +146,24 @@ public class Move {
     }
 
     public boolean isCollisionValid() {
+        boolean verdict = true;
         getCollisionWords();
         // points adder
+        if (!hasNeighbor()) {
+            verdict = false;
+        }
         int secondaryPoints = 0;
         // check the validity of each secondary word
         for (int i = 0; i < this.collisionWords.size(); i++) {
             // return false if all words aren't real
             if (!checkWord(this.collisionWords.get(i))) {
-                return false;
+                verdict = false;
             }
             secondaryPoints =+ scoreSecondaryWord(this.collisionWords.get(i));
         }
         // adds secondary points to players score
         this.board.currentPlayer.setScore(this.board.currentPlayer.score + secondaryPoints);
-        return true;
+        return verdict;
     }
 
     // does the user have the tiles needed to play the word?
@@ -226,12 +230,6 @@ public class Move {
             }
         }
         // populates neighbor space list
-
-
-
-
-
-
         addNeighborSpaces();
 
         if (verdict){
@@ -250,7 +248,7 @@ public class Move {
             if (this.spaces[spaceRow][spaceCol].getLetter() != '\u0000') {
                 // characters of word formed
                 ArrayList<Character> colWordChars = new ArrayList<Character>();
-                spacesWithTiles.add(this.neighborSpaces.get(i));
+                this.spacesWithTiles.add(this.neighborSpaces.get(i));
                 // if tile is above or below word
                 // checks if row column is different th
                 int neighborRow = this.neighborSpaces.get(i).get(0);
